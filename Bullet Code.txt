@@ -1,0 +1,10 @@
+﻿//in create
+
+
+speed = 5;
+
+
+image_angle = obj_pl1.aim_angle;
+
+
+direction = image_angle;
