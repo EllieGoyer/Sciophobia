@@ -1,8 +1,8 @@
 {
-    "id": "c912ca11-36a0-49b5-8af5-e9aed0f3246d",
+    "id": "8b6ad852-d8f4-47e9-9fea-5f14ba2c007c",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "pistol_fire_01",
+    "name": "shotgun_fire_01",
     "audioGroupGuid": "5a29488d-906d-4109-97f0-9ce4ef81221c",
     "bitDepth": 1,
     "bitRate": 128,

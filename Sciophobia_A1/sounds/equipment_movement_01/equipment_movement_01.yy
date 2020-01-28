@@ -1,9 +1,9 @@
 {
-    "id": "c912ca11-36a0-49b5-8af5-e9aed0f3246d",
+    "id": "3e8ea8a5-52d8-4d71-8599-b10f55e7961d",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "pistol_fire_01",
-    "audioGroupGuid": "5a29488d-906d-4109-97f0-9ce4ef81221c",
+    "name": "equipment_movement_01",
+    "audioGroupGuid": "0119bf79-931b-4578-93eb-31c95225133c",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

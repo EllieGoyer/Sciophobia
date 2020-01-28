@@ -1,8 +1,8 @@
 {
-    "id": "c912ca11-36a0-49b5-8af5-e9aed0f3246d",
+    "id": "1342d80a-3f9e-448e-9f94-e9093e30c642",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "pistol_fire_01",
+    "name": "grenade_explode_01",
     "audioGroupGuid": "5a29488d-906d-4109-97f0-9ce4ef81221c",
     "bitDepth": 1,
     "bitRate": 128,
