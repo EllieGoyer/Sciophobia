@@ -1,5 +1,7 @@
 //for randomly selected audio
 
+//don't worry about including this, it's more for me to remember how to do this for later files!
+
 switch(irandom(3))
 {
     case 0 : audio_play_sound(pistol_fire_01,0,false); break;
