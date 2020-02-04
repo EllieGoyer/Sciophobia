@@ -1,0 +1,7 @@
+//I put this under the Step event in the player object (it didn't play under the create event)
+
+//no-ammo sound event
+
+if(normal_ammo<=0) and mouse_check_button_pressed(mb_left) {
+	audio_play_sound(no_ammo_01,1,false);
+}
