@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "3707269d-2099-48aa-be34-48dc8047e5ae",
+            "Value": {
+                "id": "4490a8ac-42cc-429b-b5ae-4d65226acd43",
+                "resourcePath": "rooms\\Level03\\Level03.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "38b803ad-1322-487e-ae8f-6a8fcaec15ce",
             "Value": {
                 "id": "d5188662-f8ae-4cbb-ae04-54ff877ce7ea",
@@ -356,6 +364,14 @@
                 "id": "eeb80356-7cbc-4d61-a4df-6ff94a9c9771",
                 "resourcePath": "sprites\\spr_arms_right\\spr_arms_right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f40e2dc7-5ec5-427e-8e5f-6b6e7c08bd8f",
+            "Value": {
+                "id": "3388e8f4-9a3c-4f8d-9788-3ca43abe85cb",
+                "resourcePath": "objects\\obj_DummtLight\\obj_DummtLight.yy",
+                "resourceType": "GMObject"
             }
         },
         {
