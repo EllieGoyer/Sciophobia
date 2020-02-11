@@ -1,0 +1,14 @@
+//oSound event - loads all sounds
+
+//create event
+
+
+audio_group_load(sound_effects);
+audio_group_load(background_music);
+
+
+
+//async save/load event
+
+
+audio_play_sound(level_music_01,100,true);
