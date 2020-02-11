@@ -1,12 +1,23 @@
 //in create
 
+basespeed = 3;
+fastspeed = 6;
+slowspeed = 1.5;
+cooldownspeed = 2.5;
+basegrv = .2;
+
 hsp = 0; //horizontal speed
 vsp = 0; //vertical speed
-movespeed = 3; //movement speed
-grv = .2; //gravity modifier
+movespeed = basespeed; //movement speed
+grv = basegrv; //gravity modifier
+
+//count_footsteps = 0;
+
+curDir = -1; //current direction facing
 
 key_shoot = 0;
 key_shoot_auto = 0;
+key_aim = 0;
 key_dash = 0;
 key_interact = 0;
 key_show_inventory = 0;
@@ -15,7 +26,7 @@ dash_time = 1*room_speed;
 dash_cooldown_time = 0;
 
 maxHP = 10; //health
-currentHP = maxHP; 
+currentHP = maxHP;
 
 aim_angle = 0;
 
@@ -61,3 +72,6 @@ enum dash_states
 }
 
 dash_states = dash_states.not_dashing;
+
+checkedDirection = false;
+tempDirection = 1;

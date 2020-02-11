@@ -20,6 +20,7 @@ if(gamepad_is_connected(padid)) //gamepad
 	key_down = gamepad_button_check(padid, gp_padd);
 	key_shoot = gamepad_button_check_pressed(padid, gp_shoulderrb);
 	key_shoot_auto = gamepad_button_check(padid, gp_shoulderrb);
+	key_aim = gamepad_button_check(padid, gp_shoulderl);
 	key_dash = gamepad_button_check_pressed(padid, gp_face2);
 	key_interact = gamepad_button_check_pressed(padid, gp_face1);
 	key_show_inventory = gamepad_button_check(padid, gp_shoulderlb);
@@ -35,6 +36,7 @@ else //keyboard and mouse
 	key_down = keyboard_check(ord("S"));
 	key_shoot = mouse_check_button_pressed(mb_left);
 	key_shoot_auto = mouse_check_button(mb_left);
+	key_aim = mouse_check_button(mb_right);
 	key_dash = keyboard_check_pressed(vk_space);
 	key_interact = keyboard_check(ord("F"));
 	key_show_inventory = keyboard_check(ord("Q"));
@@ -43,7 +45,10 @@ else //keyboard and mouse
 }
 
 //calculate movement
-hmove = key_left + key_right;
+if(dash_states != dash_states.dashing)
+{
+	hmove = key_left + key_right;
+}
 hsp = hmove * movespeed;
 
 //ladder
@@ -54,7 +59,7 @@ if(distance_to_object(obj_DummyLadder) < 4)
 }
 else
 {
-	grv = .2;
+	grv = basegrv;
 }
 
 vsp += grv;
@@ -97,23 +102,39 @@ if(place_meeting(x, y+vsp, obj_DummyDoor))
 }
 y += vsp;
 
+//walking sounds
+/*
+if ((key_left || key_right) && (count_footsteps<1))
+{
+    audio_play_sound(step_concrete_single_01, 8, true);
+    count_footsteps = 60; // number of steps to wait before trying to play the sound again
+}
+if(!key_left && !key_right) 
+{
+	audio_stop_sound(step_concrete_single_01);
+}
+else if (count_footsteps>0) count_footsteps--;
+*/
+
 //shoot
 scr_weapon_attack();
+if((normal_ammo < 1) && (key_shoot || key_shoot_auto))
+{
+	audio_play_sound(no_ammo_01,1,false);
+}
 
 //dash
 scr_dash();
 
-//weapon switching
-if(key_show_inventory)
-{
-	scr_weapon_selection();
-}
 
-if(1*sign(hsp) = -1)
-{
-	sprite_index = spr_player_right;
-}
-else if(1*sign(hsp) = 1)
+
+if(1*sign(hsp) == -1)
 {
 	sprite_index = spr_player_left;
+	curDir = -1;
+}
+else if(1*sign(hsp) == 1)
+{
+	sprite_index = spr_player_right;
+	curDir = 1;
 }
