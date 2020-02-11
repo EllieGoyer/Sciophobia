@@ -1,3 +1,0 @@
-//bullet sound
-
-audio_play_sound(pistol_fire_01,1,false);
