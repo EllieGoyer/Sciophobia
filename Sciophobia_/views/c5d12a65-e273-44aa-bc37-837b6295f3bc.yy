@@ -15,11 +15,8 @@
         "05ba0e5f-9a07-4ddb-a7e8-62b5d64e0d03",
         "f12ee437-aafb-4eea-9344-48d0c3b21eb8",
         "0c2f1cac-7929-4efd-a646-0417f8a6e3ee",
-<<<<<<< HEAD
-        "15610d19-7a1d-4032-b652-38aff178b491"
-=======
+        "15610d19-7a1d-4032-b652-38aff178b491",
         "b40e7da4-f4a3-4174-b34f-32d43bce2246"
->>>>>>> Programming_Stuff
     ],
     "filterType": "GMSprite",
     "folderName": "sprites",
