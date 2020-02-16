@@ -1,7 +1,8 @@
 //in create
 
 basespeed = 3;
-fastspeed = 6;
+speedmod = 6;
+fastspeed = basespeed * speedmod;
 slowspeed = 1.5;
 cooldownspeed = 2.5;
 basegrv = .2;
@@ -22,8 +23,12 @@ key_dash = 0;
 key_interact = 0;
 key_show_inventory = 0;
 
-dash_time = 1*room_speed;
-dash_cooldown_time = 0;
+//dash_time is inverse to fastspeed, covers a roughly similar distance no matter the speedmod
+distance_dash = 4;
+dash_time = (distance_dash/fastspeed)*room_speed;	
+dash_cooldown_time = 2*room_speed;
+tempDash = 0;
+tempCooldown = 0;
 
 maxHP = 10; //health
 currentHP = maxHP;

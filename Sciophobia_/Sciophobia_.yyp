@@ -327,11 +327,27 @@
             }
         },
         {
+            "Key": "2ff3c437-004a-4bc9-a8a0-b9ae04db9b5d",
+            "Value": {
+                "id": "94cfbd30-699a-4eaa-8538-b982a594f8ce",
+                "resourcePath": "sprites\\spr_HealthCrate\\spr_HealthCrate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "30e57535-d74d-4255-af96-70aead74941f",
             "Value": {
                 "id": "b98da735-9c79-4b53-ab7d-8173d0fa8835",
                 "resourcePath": "scripts\\polygon_create\\polygon_create.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3125bd57-41c9-45fd-992e-c814cac29668",
+            "Value": {
+                "id": "bd581ddd-803f-4662-b166-6472909efdde",
+                "resourcePath": "objects\\obj_HealthCrate\\obj_HealthCrate.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1055,6 +1071,14 @@
             }
         },
         {
+            "Key": "9dc57724-e41f-4b23-9e32-ff36191bdf30",
+            "Value": {
+                "id": "c2a134bf-56ec-4317-ba27-83dac69bf993",
+                "resourcePath": "sprites\\spr_AmmoCrate\\spr_AmmoCrate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9f6b938b-a7d8-4ee6-84cd-83050d69a3ee",
             "Value": {
                 "id": "cb36e4ba-09b9-4aaa-a76e-cbb45a692b2d",
@@ -1394,7 +1418,7 @@
             "Key": "e844afe7-6cb6-439b-bdf5-6443ed18a20e",
             "Value": {
                 "id": "c924ca30-420c-41c4-9765-02decad5c52d",
-                "resourcePath": "objects\\obj_kill\\obj_kill.yy",
+                "resourcePath": "objects\\obj_roomGate\\obj_roomGate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1556,6 +1580,14 @@
                 "id": "cd229ad0-fb47-4b5e-a9ab-c07302d85899",
                 "resourcePath": "views\\fab861e9-f311-448d-b0cf-e1f3ea60a049.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fbdf7f08-0422-4a48-a23a-626e5e59ec87",
+            "Value": {
+                "id": "ab1c9fbb-0354-4d0f-94f9-a440e8e26729",
+                "resourcePath": "objects\\obj_AmmoCrate\\obj_AmmoCrate.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -57,7 +57,7 @@ if(distance_to_object(obj_DummyLadder) < 4)
 	vsp = key_up + key_down;
 	grv = 0;
 }
-else
+else if(dash_states != dash_states.dashing)
 {
 	grv = basegrv;
 }
