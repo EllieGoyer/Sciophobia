@@ -3,7 +3,7 @@
 maxHP = 10;
 currentHP = maxHP;
 
-enum states { idle, alert, death, stunned }
+enum states { idle, alert, attack, death, knockback, stunned }
 currentState = states.idle;			//State the enemy is at given time, default is idle
 
 
@@ -13,7 +13,8 @@ currentState = states.idle;			//State the enemy is at given time, default is idl
 maxSpeed = 2;
 enemyGravity = 1;
 acceleration = 0.3;
-enemyFriction = 0.1;
+enemyFriction = 0.9;
+
 jumpHeight = -16;
 vSpeed = 0;
 hSpeed = 0;
@@ -42,6 +43,14 @@ aggression = 0;				//How "worked up" the enemy currently is
 attackDamage = 3;
 attackSpeed = 70;				//in frames or anim speed
 attackCooldown = attackSpeed;	//time until enemy can attack again
+
+#endregion
+
+#region Crowd Control and Feedback
+
+knockbackMax = 5; //change per bullet?
+knockbackSpeed = knockbackMax; 
+
 #endregion
 
 #region Sounds
@@ -55,8 +64,9 @@ sound_Chase
 
 #region Animations
 
+
+anim_Death = spr_tempGeneralDeath;
 /*
-anim_Death 
 anim_Idle
 anim_Attack
 anim_Chase

@@ -15,10 +15,18 @@ switch (currentState)
         scr_enemy_standard_alert(); 
 		break;
 		
+	case states.attack:
+        scr_enemy_standard_attack(); 
+		break;
+		
 	case states.death:
         scr_enemy_standard_death(); 
 		break;
 		
+	case states.knockback:
+        scr_enemy_standard_knockback();
+		break;
+	
 	case states.stunned:
         //scr_standard_enemy_stunned(); //switch isInteractable variable for enemy
 		break;
@@ -27,7 +35,11 @@ switch (currentState)
 #endregion --------------------------------
 
 //Pathfinding Testing 
-if (keyboard_check(ord("X"))) { scr_reset_and_begin_pathfinding(); }
+if (keyboard_check(ord("X"))) 
+{ 
+	scr_reset_pathfinding(); 
+	scr_begin_pathfinding();
+}
 
 //Follow Path if one exists
 if (path_exists(pathBuilding)) { scr_follow_path(pathBuilding); }
