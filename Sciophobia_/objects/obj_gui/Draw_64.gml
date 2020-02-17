@@ -41,5 +41,7 @@ if(title=false && pauseMenu = false && keyboard_check_pressed(vk_escape)){title=
 //during game play
 if(title == false && pauseMenu == false)
 {
-
+	draw_text(10, 430, "HP: " + string(obj_pl1.currentHP) + "/" + string(obj_pl1.maxHP));
+	//add different ammo later
+	draw_text(10, 450, "Ammo: " + string(obj_pl1.normal_ammo));
 }
