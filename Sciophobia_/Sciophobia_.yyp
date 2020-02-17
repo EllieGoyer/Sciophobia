@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "3900e196-70a5-4c78-9dc4-0487832db6e8",
+            "Value": {
+                "id": "12af6262-cc4d-483e-8c39-a0c86e770859",
+                "resourcePath": "rooms\\Level04\\Level04.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3ace6ddd-dbba-4751-ba81-91caf29de97d",
             "Value": {
                 "id": "4a5dd096-5cac-4050-b5c9-1fe5b79fb9ad",
@@ -967,6 +975,22 @@
             }
         },
         {
+            "Key": "90379647-23cb-4560-9206-07fc337a2f48",
+            "Value": {
+                "id": "57c6284f-e780-4a82-ab77-c8dc2adabb97",
+                "resourcePath": "views\\90379647-23cb-4560-9206-07fc337a2f48.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "905803f1-91e9-4663-9583-ac75a2232c96",
+            "Value": {
+                "id": "41900c46-2e78-4112-9c48-93230d1ea094",
+                "resourcePath": "objects\\obj_HazardParent\\obj_HazardParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "90bc215c-d445-496b-a636-82889731c082",
             "Value": {
                 "id": "bc2adf30-15ed-4b5e-95f8-cf88bbf7a3c4",
@@ -1303,6 +1327,14 @@
             }
         },
         {
+            "Key": "c7b8dd04-1d0d-4ca0-b699-788c22850030",
+            "Value": {
+                "id": "4b4232da-f505-45cd-9c28-d73d4320cc3b",
+                "resourcePath": "views\\c7b8dd04-1d0d-4ca0-b699-788c22850030.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cba22ca6-91a9-4d2a-bf2e-2c88ad410e24",
             "Value": {
                 "id": "68e59ef4-cd5b-41a3-a9d8-e853f86f4f1f",
@@ -1476,14 +1508,6 @@
                 "id": "f009210a-7ab4-4fb9-835b-8ddd287bcaf8",
                 "resourcePath": "views\\f36e9485-3833-4f10-82b6-fdb120c79985.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f40e2dc7-5ec5-427e-8e5f-6b6e7c08bd8f",
-            "Value": {
-                "id": "4d2466e9-2f25-4f4f-9bb9-bfe50744ff29",
-                "resourcePath": "objects\\obj_DummtLight\\obj_DummtLight.yy",
-                "resourceType": "GMObject"
             }
         },
         {

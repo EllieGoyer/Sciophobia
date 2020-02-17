@@ -126,8 +126,6 @@ if((normal_ammo < 1) && (key_shoot || key_shoot_auto))
 //dash
 scr_dash();
 
-
-
 if(1*sign(hsp) == -1)
 {
 	sprite_index = spr_player_left;
@@ -137,4 +135,9 @@ else if(1*sign(hsp) == 1)
 {
 	sprite_index = spr_player_right;
 	curDir = 1;
+}
+
+if(currentHP <= 0)
+{
+	room_restart();
 }

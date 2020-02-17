@@ -1,8 +1,8 @@
 {
-    "id": "f40e2dc7-5ec5-427e-8e5f-6b6e7c08bd8f",
+    "id": "905803f1-91e9-4663-9583-ac75a2232c96",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_DummtLight",
+    "name": "obj_HazardParent",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "490535d5-744d-45af-8644-6046f2cc71a2",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
