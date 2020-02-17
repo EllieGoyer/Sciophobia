@@ -1,23 +1,14 @@
 {
-    "id": "5c89bcc7-be25-4eaf-9e19-573e3c9a49ae",
+    "id": "45c7d4b6-a414-428c-a955-788841a49ee9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_DummyLadder",
+    "name": "obj_stairs",
     "eventList": [
-        {
-            "id": "0c4bb791-6ef8-4085-9aec-5b5c38c5533c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "5c89bcc7-be25-4eaf-9e19-573e3c9a49ae"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "8764b094-b393-4e76-ade1-d9eb836f1406",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "45189e7d-e338-4a20-aa70-a9e5bd77f88e",
+    "spriteId": "10103406-4687-44a0-ba1f-1142d16ceda9",
     "visible": true
 }

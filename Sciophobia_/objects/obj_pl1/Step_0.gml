@@ -52,7 +52,7 @@ if(dash_states != dash_states.dashing)
 hsp = hmove * movespeed;
 
 //ladder
-if(distance_to_object(obj_DummyLadder) < 4)
+if(distance_to_object(obj_ladder) < 4)
 {
 	vsp = key_up + key_down;
 	grv = 0;
@@ -65,36 +65,41 @@ else if(dash_states != dash_states.dashing)
 vsp += grv;
 
 //horizontal collision
-if(place_meeting(x+hsp, y, obj_wall))
+if(place_meeting(x+hsp, y, obj_terrainParent))
 {
-	while(!place_meeting(x+sign(hsp), y, obj_wall))
+	if(place_meeting(x+hsp, y, obj_stairs))
 	{
-		x += sign(hsp);
+		//if we're colliding with stairs, try to go above the stairs
+		y -= 1;
+		while(!place_meeting(x+sign(hsp),y,obj_stairs))
+		{
+			
+			x+=sign(hsp);
+			//itterate one at a time until hsp ~ 0
+			hsp -= sign(hsp); // -10 - (-1) or 10 - (1)
+			if(abs(hsp) < 1){break;}
+			//abs(hsp)<1 is better than hsp==0 because hsp can be a float.
+		}
 	}
-	hsp = 0;
-}
-if(place_meeting(x+hsp, y, obj_DummyDoor))
-{
-	while(!place_meeting(x+sign(hsp), y, obj_DummyDoor))
+	
+	//terrainParent is all o_wall and o_door objects
+	while(!place_meeting(x+sign(hsp), y, obj_terrainParent))
 	{
+		//sign returns -1 or 1 (or 0) based on input
+		//moving pl1 1 pixel unit at a time until collision
 		x += sign(hsp);
+		
+		hsp -= sign(hsp);
+		if(abs(hsp) < 1){break;}
 	}
 	hsp = 0;
 }
 x += hsp;
 
 //vertical collision
-if(place_meeting(x, y+vsp, obj_wall))
+if(place_meeting(x, y+vsp, obj_terrainParent))
 {
-	while(!place_meeting(x,y+sign(vsp), obj_wall))
-	{
-		y += sign(vsp);
-	}
-	vsp = 0;
-}
-if(place_meeting(x, y+vsp, obj_DummyDoor))
-{
-	while(!place_meeting(x,y+sign(vsp), obj_DummyDoor))
+	while(!place_meeting(x,y+sign(vsp), obj_terrainParent))
 	{
 		y += sign(vsp);
 	}

@@ -10,6 +10,7 @@
         "007bad62-eaaf-4e08-8ac7-75b73bdbe749",
         "cba22ca6-91a9-4d2a-bf2e-2c88ad410e24",
         "daa1dd7b-b455-4665-938a-6611291af065",
+        "97e1c57c-21d7-45b6-8100-a58452440893",
         "df52e9b8-9ae8-4f9d-8f74-8a00f1c9b4c1"
     ],
     "filterType": "GMSprite",
