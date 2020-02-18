@@ -9,3 +9,5 @@ image_angle = obj_pl1.aim_angle;
 direction = image_angle;
 
 damage = obj_pl1.dmg;
+
+audio_play_sound(pistol_fire_01,1,false);

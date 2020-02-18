@@ -109,26 +109,24 @@ if(place_meeting(x, y+vsp, obj_terrainParent))
 }
 y += vsp;
 
-//walking sounds
-/*
-if ((key_left || key_right) && (count_footsteps<1))
-{
-    audio_play_sound(step_concrete_single_01, 8, true);
-    count_footsteps = 60; // number of steps to wait before trying to play the sound again
-}
-if(!key_left && !key_right) 
-{
-	audio_stop_sound(step_concrete_single_01);
-}
-else if (count_footsteps>0) count_footsteps--;
-*/
+
+
+
+
+
 
 //shoot
 scr_weapon_attack();
+
+
+
 if((normal_ammo < 1) && (key_shoot || key_shoot_auto))
 {
 	audio_play_sound(no_ammo_01,1,false);
+	
 }
+
+
 
 //dash
 scr_dash();

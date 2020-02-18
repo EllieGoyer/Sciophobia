@@ -102,3 +102,10 @@ if(key_aim || key_shoot || key_shoot_auto) //if aiming or shooting
 		}
 	}
 }
+
+//walking sound
+if ( floor(image_index) == 3   &&   floor(image_index) != lastFrame ) {
+    audio_play_sound(step_concrete_single_01, 1, 0 );
+    }
+
+lastFrame = floor(image_index);

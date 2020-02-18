@@ -8,3 +8,4 @@ else
 {
 	instance_destroy();
 }
+
