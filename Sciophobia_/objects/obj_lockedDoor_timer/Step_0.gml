@@ -7,5 +7,5 @@ if (is_active)
 	}else{
 		y -= scale_factor * 50;	
 	}
-	
+	//obj_grid.alarm[0]= 1;	//Signal for walkable grid to be rebuilt
 }

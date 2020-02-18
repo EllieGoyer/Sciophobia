@@ -9,8 +9,8 @@ scr_reset_pathfinding();
 
 //---Apply knockback---
 scr_enemy_collision();
-if (image_xscale >= 0) { x += knockbackSpeed; }
-else { x -= knockbackSpeed; }
+if (image_xscale >= 0) { hSpeed += knockbackSpeed; }
+else { hSpeed -= knockbackSpeed; }
 knockbackSpeed = scr_approach(knockbackSpeed, 0, enemyFriction);
 
 //---End Conditions---
