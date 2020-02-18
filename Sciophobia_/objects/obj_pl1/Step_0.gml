@@ -49,14 +49,7 @@ if(dash_states != dash_states.dashing)
 {
 	hmove = key_left + key_right;
 }
-if(key_down)
-{
-	hsp = 0;
-}
-else
-{
-	hsp = hmove * movespeed;
-}
+hsp = hmove * movespeed;
 
 //ladder
 if(distance_to_object(obj_ladder) < 4)

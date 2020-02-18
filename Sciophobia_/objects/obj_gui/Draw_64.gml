@@ -15,6 +15,13 @@ if(title)
 		{
 			game_end();
 		}
+		//controls
+		draw_text(200, 300, "Controls");
+		draw_text(200, 320, "Interact: A");
+		draw_text(200, 340, "Inventory: Left Bumper");
+		draw_text(200, 360, "Aim: Left Trigger");
+		draw_text(200, 380, "Shoot: Right Trigger");
+		draw_text(200, 400, "Dash: B");
 	}
 	else
 	{
@@ -28,6 +35,13 @@ if(title)
 		{
 			game_end();
 		}
+		//controls
+		draw_text(200, 300, "Controls");
+		draw_text(200, 320, "Interact: F");
+		draw_text(200, 340, "Inventory: Q");
+		draw_text(200, 360, "Aim: Right Mouse");
+		draw_text(200, 380, "Shoot: Left Mouse");
+		draw_text(200, 400, "Dash: Space");
 	}
 }
 
