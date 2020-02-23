@@ -3,6 +3,8 @@
 light[| eLight.Type] = eLightType.Spot;		
 
 //Set Origin to player
+x = obj_pl1.x;	
+y = obj_pl1.y;	
 light[| eLight.X] = obj_pl1.x;				
 light[| eLight.Y] = obj_pl1.y;
 

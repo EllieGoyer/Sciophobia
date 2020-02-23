@@ -50,3 +50,7 @@ if (!place_meeting (x, y + 1, obj_terrainParent)) { vSpeed += enemyGravity; }
 scr_enemy_collision();
 
 scr_check_HP();
+
+//Lighting Update
+//polygon = polygon_from_instance(id);
+

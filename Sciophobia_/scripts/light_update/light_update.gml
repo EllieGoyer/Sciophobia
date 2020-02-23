@@ -202,7 +202,7 @@ if(!light_is_directional && global.shadowCastersCullByCollisionMask) {
 			if(shadow == undefined) {
 				// Count this shadow caster as active
 				++global.worldActiveShadowCasters;
-		
+
 				// Trace a shadow for this object
 				shadow = light_trace_polygon(id, light);
 		
@@ -255,7 +255,7 @@ else {
 		if(has_ignore_set && ds_map_exists(ignore_set, id)) {
 			// Yes, skip it
 			continue;
-		}
+		}								
 	
 		// Get shadow caster flags
 		var shadow_caster_dirty = (flags & eShadowCasterFlags.Dirty) != 0;
@@ -287,7 +287,7 @@ else {
 					// Create the map
 					out_of_range_map = ds_map_create();
 					light[| eLight.ShadowCastersOutOfRange] = out_of_range_map;
-				}
+				}	
 				ds_map_add(out_of_range_map, id, 0);
 				continue;
 			}
@@ -365,7 +365,7 @@ else {
 				// No it didn't
 				continue;
 			}
-		
+			
 			if(shadow_caster_static) {
 				// Save the array; we copy it because the returned array is reused
 				var copy = array_create(array_length_1d(shadow));
