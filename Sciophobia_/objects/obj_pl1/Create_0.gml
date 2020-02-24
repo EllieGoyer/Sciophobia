@@ -1,8 +1,3 @@
-//in create
-//testing functionality for sound
-can_play_sound = true;
-sound_timer = 0;
-
 basespeed = 3;
 speedmod = 6;
 fastspeed = basespeed * speedmod;

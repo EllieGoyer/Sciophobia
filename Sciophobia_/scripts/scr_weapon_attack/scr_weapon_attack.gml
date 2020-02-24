@@ -34,6 +34,7 @@ else if(obj_pl1.hunting_rifle && obj_pl1.normal_ammo > 0)
 	{
 		instance_create_layer(x, y, "Instances", obj_bullet);
 		obj_pl1.normal_ammo--;
+		//audio_play_sound(no_ammo_01,1,false);
 	}
 }
 else if(obj_pl1.pistol && obj_pl1.normal_ammo > 0)

@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "18621b4b-d44a-44fb-8075-bff835d75441",
+            "Value": {
+                "id": "0594e513-4c11-4dde-b495-5d7daf14694d",
+                "resourcePath": "objects\\obj_fallStairs\\obj_fallStairs.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e138b5a-f21d-4123-b03a-a3ec64bfebb7",
             "Value": {
                 "id": "a74fafd7-bf32-446a-b7ee-a9526349234d",
@@ -481,7 +489,7 @@
         {
             "Key": "3900e196-70a5-4c78-9dc4-0487832db6e8",
             "Value": {
-                "id": "12af6262-cc4d-483e-8c39-a0c86e770859",
+                "id": "876222a2-691d-4f9a-b88a-69dfb337e97b",
                 "resourcePath": "rooms\\Level04\\Level04.yy",
                 "resourceType": "GMRoom"
             }
@@ -631,6 +639,14 @@
             }
         },
         {
+            "Key": "491b2be0-ceae-4b40-aecc-92cf31086a16",
+            "Value": {
+                "id": "c5e80491-7965-4b81-b4fe-06416de7e515",
+                "resourcePath": "sprites\\spr_empty\\spr_empty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "492ffc08-c7bf-4a8e-9796-6f3d743a8fc6",
             "Value": {
                 "id": "6edfd70e-97aa-4336-976d-1170c77c6179",
@@ -655,11 +671,27 @@
             }
         },
         {
+            "Key": "4b1052e7-f1f8-4d60-bd3c-e560b55ad562",
+            "Value": {
+                "id": "1e0a4828-1021-41eb-b497-76c9df517892",
+                "resourcePath": "sprites\\spr_stairs2\\spr_stairs2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4c93a25a-365b-46e5-9b41-8a0af027d3c8",
             "Value": {
                 "id": "88f53b8c-5ff2-4ed2-936c-669fc45c6619",
                 "resourcePath": "objects\\obj_damage_effect\\obj_damage_effect.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4dd296d5-4b36-460e-aa2d-5c48c02a8010",
+            "Value": {
+                "id": "3d282145-e807-4daa-a6b7-d97d368a867d",
+                "resourcePath": "views\\3707269d-2099-48aa-be34-48dc8047e5ae-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -932,6 +964,14 @@
                 "id": "48dfe953-60b9-4c98-afa0-81fe7715d100",
                 "resourcePath": "sprites\\spr_player_fall_left\\spr_player_fall_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "71d90263-4567-44fe-ae86-de1b1a21f793",
+            "Value": {
+                "id": "703648f1-906c-4807-a3db-602bef8a9ffb",
+                "resourcePath": "rooms\\Level05\\Level05.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
