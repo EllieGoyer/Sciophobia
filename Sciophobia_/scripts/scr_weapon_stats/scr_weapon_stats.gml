@@ -7,6 +7,7 @@ if(obj_pl1.knife)
 else if(obj_pl1.hunting_rifle)
 {
 	obj_pl1.reload_sp = 2*room_speed;
+	obj_pl1.shoot_sp = 1;
 	obj_pl1.dmg = 3;
 	obj_pl1.bullet_capacity = 1;
 	obj_pl1.weapon_weight = 1;

@@ -25,6 +25,14 @@ if(obj_pl1.pulse_cannon != -1)
 {
 	obj_pl1.pulse_cannon = 0;
 }
+obj_pl1.dissolver_grenadeE = 0;
+obj_pl1.flashbangsE = 0;
+obj_pl1.molotovsE = 0;
+obj_pl1.glowsticksE = 0;
+if(obj_pl1.flashlight != -1)
+{
+	obj_pl1.flashlight = 0;
+}
 
 //set selected weapon to equipped
 if(argument0 == 1)
