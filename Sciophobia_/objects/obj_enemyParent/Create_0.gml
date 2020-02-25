@@ -11,10 +11,12 @@ maxHP = 10;
 currentHP = maxHP;
 
 #endregion
+#region States
 
 enum states { idle, alert, attack, death, knockback, stunned }
 currentState = states.idle;			//State the enemy is at given time, default is idle
 
+#endregion
 #region Movement
 maxSpeed = 2;
 enemyGravity = 1;
