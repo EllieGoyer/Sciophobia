@@ -3391,14 +3391,6 @@
             }
         },
         {
-            "Key": "d88f1e23-4a63-400b-9670-f63b32ce9b4c",
-            "Value": {
-                "id": "03fe74c5-eb78-4de4-b843-16dd268632a8",
-                "resourcePath": "scripts\\scr_weapon_selection\\scr_weapon_selection.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d8fc3144-493e-478e-8d57-3ecbe55e88f3",
             "Value": {
                 "id": "f3005976-26be-48c4-a998-6d5259e0be7a",
@@ -4019,7 +4011,6 @@
         "3efd9d36-f4e9-4931-8cf7-113d75c93e9c",
         "ab54a712-5b9d-4388-8375-b3501845852b",
         "67f04608-7f1b-4d76-8f81-a7c369858ad5",
-        "d88f1e23-4a63-400b-9670-f63b32ce9b4c",
         "85dd654e-f4c2-4f4a-a88a-de6f854523c7",
         "8b1cc8f7-fe57-474c-ae46-ccd5878c1cda",
         "1e138b5a-f21d-4123-b03a-a3ec64bfebb7",

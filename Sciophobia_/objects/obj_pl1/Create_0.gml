@@ -59,6 +59,11 @@ molotovs = 0;
 flashbangs = 0;
 dissolver_grenade = 0;
 
+glowsticksE = 0;
+molotovsE = 0;
+flashbangsE = 0;
+dissolver_grenadeE = 0;
+
 //different weapon stats
 reload_sp = 1;
 shoot_sp = 1;

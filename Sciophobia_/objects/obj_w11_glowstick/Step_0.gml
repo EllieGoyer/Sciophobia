@@ -11,6 +11,10 @@ if(place_meeting(x, y, obj_crosshairs))
 	{
 		image_index = 1;
 	}
+	if(obj_pl1.key_interact)
+	{
+		scr_weapon_switch(11);
+	}
 }
 else
 {
