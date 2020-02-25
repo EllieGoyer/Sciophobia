@@ -52,7 +52,7 @@ if(dash_states != dash_states.dashing)
 hsp = hmove * movespeed;
 
 //ladder
-if(distance_to_object(obj_ladder) < 4)
+if(distance_to_object(obj_ladder) < 2)
 {
 	vsp = key_up + key_down;
 	grv = 0;

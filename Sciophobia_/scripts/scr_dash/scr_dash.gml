@@ -25,7 +25,7 @@ if(obj_pl1.key_dash && obj_pl1.tempCooldown <= 0)
 {
 	if(!obj_pl1.checkedDirection)
 	{
-		obj_pl1.tempDirection = obj_pl1.hmove;
+		obj_pl1.tempDirection = obj_pl1.curDir;
 		obj_pl1.checkedDirection = true;
 	}
 	dash_states = dash_states.dashing;

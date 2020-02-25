@@ -1,6 +1,7 @@
 
 draw_self();
 
+//arms
 if(key_aim || key_shoot || key_shoot_auto) //if aiming or shooting
 {
 	if(pistol) //one handed
@@ -109,3 +110,10 @@ if ( floor(image_index) == 3   &&   floor(image_index) != lastFrame ) {
     }
 
 lastFrame = floor(image_index);
+
+//interact buttons
+if((distance_to_object(obj_door) < 6) || (distance_to_object(obj_AmmoCrate) < 6)
+|| (distance_to_object(obj_HealthCrate) < 6) || (distance_to_object(obj_switch) < 6))
+{
+	scr_interact_GUI();
+}

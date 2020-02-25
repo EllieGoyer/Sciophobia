@@ -23,7 +23,7 @@ else if(obj_pl1.vsp > 2)
 	}
 }
 //crouch
-else if(obj_pl1.key_down && distance_to_object(obj_ladder) > 2)
+else if(obj_pl1.key_down && distance_to_object(obj_ladder) > 4)
 {
 	if(obj_pl1.curDir) //right
 	{

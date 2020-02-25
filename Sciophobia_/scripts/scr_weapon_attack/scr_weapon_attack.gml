@@ -19,7 +19,9 @@ if((obj_pl1.aim_angle <= 360 && obj_pl1.aim_angle >= 270 && obj_pl1.curDir == -1
 	obj_pl1.curDir = 1;
 	sprite_index = spr_player_right;
 }
-	
+
+if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x <= obj_pl1.x) || obj_pl1.hmove == 0)
+{
 if(obj_pl1.knife)
 {
 	if(key_shoot)
@@ -76,4 +78,5 @@ else if(obj_pl1.pulse_cannon && obj_pl1.special_ammo > 0)
 		instance_create_layer(x, y, "Instances", obj_bullet);
 		obj_pl1.special_ammo--;
 	}	
+}
 }

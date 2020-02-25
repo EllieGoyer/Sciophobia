@@ -47,7 +47,7 @@ assult_rifle = -1;
 pulse_cannon = -1;
 
 //permanent
-flashlight = 0;
+flashlight = -1;
 armor = 0;
 
 //consumable
