@@ -29,6 +29,7 @@ if(obj_pl1.key_dash && obj_pl1.tempCooldown <= 0)
 		obj_pl1.checkedDirection = true;
 	}
 	dash_states = dash_states.dashing;
+	audio_play_sound(player_dash_01, 1, false);
 }
 if(obj_pl1.tempDash < 0)
 {
