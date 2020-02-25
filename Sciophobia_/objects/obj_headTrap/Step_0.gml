@@ -32,7 +32,9 @@ switch (currentState)
 //Follow Path if one exists
 if (path_exists(pathBuilding)) { scr_follow_path(pathBuilding); }
 
-
 scr_enemy_collision();
 
 scr_check_HP();
+
+//Make light pause it
+if (isInLight) { moveTimer = 80; }

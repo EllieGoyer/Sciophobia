@@ -3,6 +3,8 @@
 
 scr_reset_pathfinding();
 
+visible = true;
+
 //Set Death Anim/sprite 
 image_speed = 0.3;
 sprite_index = anim_Death;

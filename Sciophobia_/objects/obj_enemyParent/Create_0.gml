@@ -19,6 +19,7 @@ currentState = states.idle;			//State the enemy is at given time, default is idl
 #endregion
 #region Movement
 maxSpeed = 2;
+currentSpeed = maxSpeed;
 enemyGravity = 1;
 acceleration = 0.3;
 enemyFriction = 0.9;

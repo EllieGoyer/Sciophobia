@@ -9,7 +9,7 @@
         "47d9b79d-fbcb-4fc1-8b2c-397c5c3117fc"
     ],
     "filterType": "GMObject",
-    "folderName": "Enemies and AI (Aiden)",
+    "folderName": "Enemies and AI ",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

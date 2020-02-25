@@ -12,7 +12,7 @@ if (action == 0)
     if (path_get_point_y(argument0, pathPoint) == path_get_point_y(argument0, pathPoint+1) 
 	&& path_get_point_x(argument0, pathPoint) + cellSize * pathDirection == path_get_point_x(argument0, pathPoint+1))
     {
-	    hSpeed = maxSpeed * pathDirection ;
+	    hSpeed = currentSpeed * pathDirection ;
 	    action = 1;
     }
     else //check if next point is horizontal jump or jump over a pit
@@ -20,7 +20,7 @@ if (action == 0)
         if (path_get_point_y(argument0, pathPoint) == path_get_point_y(argument0, pathPoint + 1) 
 		&& path_get_point_x(argument0, pathPoint) + 2 * cellSize * pathDirection == path_get_point_x(argument0, pathPoint + 1))
         {
-	        hSpeed = maxSpeed * pathDirection ;
+	        hSpeed = currentSpeed * pathDirection ;
 	        vSpeed = jumpHeight *0.7 ;
 	        action = 1;
         }
@@ -28,7 +28,7 @@ if (action == 0)
 		{
 	        if (path_get_point_y(argument0, pathPoint) < path_get_point_y(argument0, pathPoint + 1))
 	        {
-	            hSpeed = maxSpeed * pathDirection;
+	            hSpeed = currentSpeed * pathDirection;
 				
 	            if (x <= path_get_point_x(argument0, pathPoint + 1) && path_get_point_x(argument0, pathPoint +1 ) <(x + hSpeed * pathDirection))
 	            {
@@ -42,7 +42,7 @@ if (action == 0)
                 if (path_get_point_x(argument0, pathPoint) == path_get_point_x(argument0, pathPoint + 1) - cellSize * 2 * pathDirection 
 				&& path_get_point_y(argument0, pathPoint) == path_get_point_y(argument0, pathPoint + 1) + cellSize)
                 {
-	                hSpeed = maxSpeed * pathDirection * 0.625 ;
+	                hSpeed = currentSpeed * pathDirection * 0.625 ;
 	                vSpeed = jumpHeight * 1.1 ;
 	                action = 1;
                 }
@@ -51,13 +51,13 @@ if (action == 0)
                     if (path_get_point_y(argument0, pathPoint) == path_get_point_y(argument0, pathPoint+1) + cellSize 
 					&& path_get_point_x(argument0, pathPoint) + cellSize*pathDirection == path_get_point_x(argument0, pathPoint + 1))
                     {
-						hSpeed = maxSpeed * pathDirection / 2;
+						hSpeed = currentSpeed * pathDirection / 2;
 						
                         if (place_meeting(x, y  +1 , obj_terrainParent) && jumpAction == 0)
                         {
 	                        vSpeed = jumpHeight * 0.9 ;
 	                        jumpAction = 1 ;
-	                        hSpeed = maxSpeed * pathDirection ;
+	                        hSpeed = currentSpeed * pathDirection ;
                         }
                     }
                 }
