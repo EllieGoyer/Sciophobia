@@ -10,7 +10,8 @@
         "aa65bcc0-3248-4db4-a629-7496dd21bd12",
         "9a1c96ca-f807-45d2-a7c5-caef5c6112e5",
         "3ace6ddd-dbba-4751-ba81-91caf29de97d",
-        "f4b36f19-9a4b-411b-aa8a-4a28745b36fc"
+        "f4b36f19-9a4b-411b-aa8a-4a28745b36fc",
+        "aaf34fb3-2f5b-40a8-8497-9069cfe95f2b"
     ],
     "filterType": "GMSound",
     "folderName": "Player Sounds",

@@ -26,6 +26,7 @@ direction = image_angle;
 damage = obj_pl1.dmg;
 
 
+
 switch(irandom(3))
 {
     case 0 : audio_play_sound(pistol_fire_01,0,false); break;

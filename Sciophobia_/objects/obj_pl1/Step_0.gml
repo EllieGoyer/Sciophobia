@@ -126,7 +126,32 @@ else if(1*sign(hsp) == 1)
 
 scr_animations();
 
+
 if(currentHP <= 0)
 {
 	room_restart();
 }
+
+//no ammo audio
+if((normal_ammo < 1) && (key_shoot || key_shoot_auto) && can_play_sound)
+{
+	audio_play_sound(no_ammo_01,1,false);
+	can_play_sound = false;
+	sound_timer = 10;
+}
+
+//general sound timer reset
+
+if(can_play_sound == false)
+{
+	sound_timer--;
+}
+
+if(sound_timer <= 0)
+{
+	can_play_sound = true;
+}
+
+//player damage sound
+
+

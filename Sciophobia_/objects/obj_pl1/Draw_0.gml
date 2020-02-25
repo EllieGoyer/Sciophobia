@@ -117,3 +117,4 @@ if((distance_to_object(obj_door) < 6) || (distance_to_object(obj_AmmoCrate) < 6)
 {
 	scr_interact_GUI();
 }
+

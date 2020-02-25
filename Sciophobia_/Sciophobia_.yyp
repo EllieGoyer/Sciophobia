@@ -1359,6 +1359,14 @@
             }
         },
         {
+            "Key": "49f53ab2-4537-410d-a3fe-3cfcaae1a82e",
+            "Value": {
+                "id": "02ff5bce-97bb-476c-843d-27785c046fb4",
+                "resourcePath": "sounds\\door_open_01\\door_open_01.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4a50afc4-83e1-4fd3-8956-7a7b08bf569a",
             "Value": {
                 "id": "e6c3e33c-52d1-4ca5-afa6-ca86dc9381f0",
@@ -2815,6 +2823,14 @@
             }
         },
         {
+            "Key": "aaf34fb3-2f5b-40a8-8497-9069cfe95f2b",
+            "Value": {
+                "id": "e0fe07aa-a788-4f5a-b173-4f9c5b182af7",
+                "resourcePath": "sounds\\player_dash_01\\player_dash_01.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ab1b65d2-7505-4619-8bc4-f77cac693ad7",
             "Value": {
                 "id": "84957212-e190-48dd-a8be-1c9f77bda4aa",
@@ -3492,6 +3508,14 @@
                 "id": "59d2b0e6-eedf-40bc-9cc4-a8a3d27f109e",
                 "resourcePath": "objects\\obj_w9_flashbang\\obj_w9_flashbang.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e52cc9bc-f8cf-4797-8fdc-81e616879935",
+            "Value": {
+                "id": "a83a0de6-929f-4c33-af59-f090cacf6f35",
+                "resourcePath": "views\\e52cc9bc-f8cf-4797-8fdc-81e616879935.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

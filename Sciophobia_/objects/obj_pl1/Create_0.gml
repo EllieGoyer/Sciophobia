@@ -83,3 +83,7 @@ dash_states = dash_states.not_dashing;
 
 checkedDirection = false;
 tempDirection = 1;
+
+//audio timer
+can_play_sound = true;
+sound_timer = 0;
