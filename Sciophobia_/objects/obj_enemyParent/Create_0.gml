@@ -64,11 +64,10 @@ sound_Idle
 sound_Attack
 sound_Chase
 */
-#endregion
-#region Animations
-
-
+             
 anim_Death = spr_tempGeneralDeath;
+
+
 /*
 anim_Idle
 anim_Attack

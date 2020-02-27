@@ -3,8 +3,10 @@
 if(is_active)
 {
 	image_index = 1;	
+	
 }else{
-	image_index = 0;	
+	image_index = 0;
+
 }
 
 if(trigger_value > 0)

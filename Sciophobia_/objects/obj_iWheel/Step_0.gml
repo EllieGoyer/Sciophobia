@@ -1,4 +1,10 @@
 /// @description Insert description here
+//sound timer script
+
+
+
+
+
 
 if(obj_pl1.key_show_inventory)
 {
@@ -17,8 +23,15 @@ if(obj_pl1.key_show_inventory)
 	instance_create_layer(x,y, "GUI", obj_w10_moltov);
 	instance_create_layer(x,y, "GUI", obj_w11_glowstick);
 	instance_create_layer(x,y, "GUI", obj_w12_flashlight);
-}
+	
+	
+	if(!audio_is_playing(menu_rotate_01) && obj_pl1.key_show_inventory)
+	{
+		audio_play_sound(menu_rotate_01, 1, false);
+	}
+	
 else
 {
 	image_alpha = 0;
+}
 }

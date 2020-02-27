@@ -1,3 +1,19 @@
+//sound timer script
+//general sound timer reset
+can_play_sound = true;
+sound_timer = 0;
+
+if(can_play_sound == false)
+{
+	sound_timer--;
+}
+
+if(sound_timer <= 0)
+{
+	can_play_sound = true;
+}
+
+
 //change direction based on aim when moving
 if(obj_pl1.hmove == 0)
 {
@@ -32,6 +48,9 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 		{
 			//stab animation
 			//hit in front
+			
+			//audio
+			audio_play_sound(knife_swing_01, 1, false);
 		}
 	}
 	else if(obj_pl1.hunting_rifle && obj_pl1.normal_ammo > 0)
@@ -40,7 +59,7 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 		{
 			instance_create_layer(x, y, "Instances", obj_bullet);
 			obj_pl1.normal_ammo--;
-			//audio_play_sound(no_ammo_01,1,false);
+			audio_play_sound(hunting_rifle_01, 1, false);
 		}
 	}
 	else if(obj_pl1.pistol && obj_pl1.normal_ammo > 0)
@@ -49,6 +68,9 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 		{
 			instance_create_layer(x, y, "Instances", obj_bullet);
 			obj_pl1.normal_ammo--;
+			//audio
+			audio_play_sound(pistol_fire_01, 1, false);
+				
 		}
 	}
 	else if(obj_pl1.shotgun && obj_pl1.special_ammo > 0)
@@ -82,5 +104,13 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 			instance_create_layer(x, y, "Instances", obj_bullet);
 			obj_pl1.special_ammo--;
 		}	
+	}
+	else if(!audio_is_playing(no_ammo_01) && obj_pl1.normal_ammo < 1)
+	{
+		if(key_shoot_auto)
+		{
+		audio_play_sound(no_ammo_01, 1, false);
+		}
+
 	}
 }

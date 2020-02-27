@@ -1,4 +1,4 @@
-/// @description Main Functiomality
+ /// @description Main Functiomality
 
 #region -----Main Finite State Machine-----
 

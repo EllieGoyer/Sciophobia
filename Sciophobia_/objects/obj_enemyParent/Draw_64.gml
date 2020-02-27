@@ -12,9 +12,7 @@ if (ds_exists(ds_grid_pathfinding_copy, ds_type_grid))
         {
             var value = ds_grid_get(ds_grid_pathfinding_copy, i, j);
             draw_text_transformed(i * obj_grid.cellDimension + 8, j * obj_grid.cellDimension + 8, string(value), 1, 1, 0);
-        }
-    }
-}
+ }
 */
 #endregion
 
