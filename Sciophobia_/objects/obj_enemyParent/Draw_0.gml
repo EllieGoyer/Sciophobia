@@ -16,4 +16,11 @@ else { lightTestText = "Dark!"; }
 draw_text_transformed(x- 10, y - 100, lightTestText, 2, 2, 0);
 */
 
-scr_in_light_check();
+//Light Checker for enemies
+if (lightCheck < 0) 
+{ 
+	lightCheck = lightCheckTimer;
+	scr_in_light_check(); 
+}
+
+lightCheck--;

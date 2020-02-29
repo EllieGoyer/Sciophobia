@@ -7,8 +7,33 @@
 if (!hasAttacked)
 {
 	hasAttacked = true;
-	var swipe = instance_create_layer(x - 10, y, "Instances", obj_enemySwipe); //Create Projectile
 	attackCooldown = attackSpeed;		//reset cooldown
+	
+	//Attack Implementation
+	//If player is in range
+	if (point_distance(x, y, obj_pl1.x, obj_pl1.y) <= attackRadius)
+	{
+		
+		
+		//get end point
+		//get mid point
+		//get seconday mid points
+		
+
+	}
+	else
+	{
+		
+	}
+	
+	isAttacking = true;
+}
+
+if (isAttacking)
+{
+	//have parts move to points
+	
+	//end condition is when they hit that point
 	alarm[0] = moveTimer; //Pause before moving again
 }
 

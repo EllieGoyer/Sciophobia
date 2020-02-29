@@ -8,7 +8,10 @@ if(!audio_is_playing(enemy_death_01))
 	audio_play_sound(enemy_death_01, 1, false);
 }
 
+//Variable Resets
+image_alpha = 1;
 visible = true;
+enemyGravity = 0;
 
 //Set Death Anim/sprite 
 image_speed = 0.4;

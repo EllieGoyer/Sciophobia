@@ -38,8 +38,71 @@ isInLight = isLit; //Set enemy variable to light check
 */
 #endregion
 
-#region Point in Triangle Implmentation 
+//-----------------------------------------
+//               WARNING
+//------------------------------------------
+#region //Point in Triangle Implmentation 
 
+//Only worry about light if player is within distance
+var distanceCheck = 500;
+if (point_distance(x, y, obj_pl1.x, obj_pl1.y) <= distanceCheck
+	&& collision_line(x, y, obj_pl1.x, obj_pl1.y, obj_terrainParent, 1, 0) == noone)
+{
+	var isLit;						//return
+
+	var currentX = x, currentY = y;	//The enemy's current coordinates 
+	var bX, bY;						//Coodinates of 2nd vertex
+	var cX, cY;						//Coodinates of 2nd vertex
+
+	var lightAngle;					//Pull from object
+	var lightDirection;				//Pull from object
+
+	//Check against each light
+	with (obj_light)
+	{
+		lightAngle = light[| eLight.Angle] / 2;				
+		lightDirection = light[| eLight.Direction];	
+	
+		//Set coordinates per light
+		if (light[| eLight.Type] == eLightType.Spot)
+		{		
+			//Find points for collission line
+			var bXTemp = x + lengthdir_x(1000, lightDirection - lightAngle);
+			var bYTemp = y + lengthdir_y(1000, lightDirection - lightAngle);
+			var cXTemp = x + lengthdir_x(1000, lightDirection + lightAngle);
+			var cYTemp = y + lengthdir_y(1000, lightDirection + lightAngle);
+		
+			//Find point of collision
+			var bX = scr_collision_line_x(x, y, bXTemp, bYTemp, obj_terrainParent, 0, 0);
+			var bY = scr_collision_line_y(x, y, bXTemp, bYTemp, obj_terrainParent, 0, 0);
+			var cX = scr_collision_line_x(x, y, cXTemp, cYTemp, obj_terrainParent, 0, 0);
+			var cY = scr_collision_line_y(x, y, cXTemp, cYTemp, obj_terrainParent, 0, 0);
+
+			//Test Conditions
+			if(point_in_triangle(currentX, currentY, x, y, bX, bY, cX, cY)
+				&& collision_line(x, y, currentX, currentY, obj_terrainParent, 1, 0) == noone)
+			{		
+				isLit = true;
+				break;
+			}
+	
+			isLit = false; //else
+	
+			//For Testing
+			//draw_triangle(x, y, bX, bY, cX, cY, 1);
+		}
+	}
+
+	isInLight = isLit; //Set enemy variable to light check
+}
+
+#endregion
+//------------------------------------------
+//              Warning
+//------------------------------------------
+
+#region //Cheaper Point in Triangle Implmentation 
+/*
 var isLit;						//return
 
 var currentX = x, currentY = y;	//The enemy's current coordinates 
@@ -60,16 +123,10 @@ with (obj_light)
 	if (light[| eLight.Type] == eLightType.Spot)
 	{		
 		//Find points for collission line
-		var bXTemp = x + lengthdir_x(1000, lightDirection - lightAngle);
-		var bYTemp = y + lengthdir_y(1000, lightDirection - lightAngle);
-		var cXTemp = x + lengthdir_x(1000, lightDirection + lightAngle);
-		var cYTemp = y + lengthdir_y(1000, lightDirection + lightAngle);
-		
-		//Find point of collision
-		var bX = scr_collision_line_x(x, y, bXTemp, bYTemp, obj_terrainParent, 0, 0);
-		var bY = scr_collision_line_y(x, y, bXTemp, bYTemp, obj_terrainParent, 0, 0);
-		var cX = scr_collision_line_x(x, y, cXTemp, cYTemp, obj_terrainParent, 0, 0);
-		var cY = scr_collision_line_y(x, y, cXTemp, cYTemp, obj_terrainParent, 0, 0);
+		var bX = x + lengthdir_x(lightDistance, lightDirection - lightAngle);
+		var bY = y + lengthdir_y(lightDistance, lightDirection - lightAngle);
+		var cX = x + lengthdir_x(lightDistance, lightDirection + lightAngle);
+		var cY = y + lengthdir_y(lightDistance, lightDirection + lightAngle);
 
 		//Test Conditions
 		if(point_in_triangle(currentX, currentY, x, y, bX, bY, cX, cY)
@@ -82,10 +139,10 @@ with (obj_light)
 		isLit = false; //else
 	
 		//For Testing
-		//draw_triangle(x, y, bX, bY, cX, cY, 1);
+		draw_triangle(x, y, bX, bY, cX, cY, 1);
 	}
 }
 
 isInLight = isLit; //Set enemy variable to light check
-
+*/
 #endregion

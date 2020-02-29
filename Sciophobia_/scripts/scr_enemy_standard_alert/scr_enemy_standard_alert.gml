@@ -2,7 +2,7 @@
 //For when the enemy is alerted to the player's presence
 
 //Make Enemy Face player
-image_xscale = sign(x - obj_pl1.x);
+
 
 //Attack if close enough
 if (point_distance(x, y, obj_pl1.x, obj_pl1.y) <= sightDetectRadius

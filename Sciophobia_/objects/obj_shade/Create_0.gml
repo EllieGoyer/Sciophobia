@@ -8,3 +8,7 @@ maxHP = 4;
 currentHP = maxHP;
 
 //visible = false;
+
+
+//Invisibility
+image_alpha = 0.15;

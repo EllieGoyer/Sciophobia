@@ -22,4 +22,4 @@ light[| eLight.Intensity] = lightIntensity;
 
 
 // Needed for Dynamic Parts
-light[| eLight.Flags] |= eLightFlags.Dirty; 
+//light[| eLight.Flags] |= eLightFlags.Dirty; 

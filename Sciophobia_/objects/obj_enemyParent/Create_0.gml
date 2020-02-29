@@ -2,6 +2,8 @@
 
 #region Lighting
 
+lightCheckTimer = room_speed;
+lightCheck = lightCheckTimer;
 isInLight = false; //Is the shadow caster's bounds within range of the light?
 
 #endregion
@@ -20,7 +22,7 @@ currentState = states.idle;			//State the enemy is at given time, default is idl
 #region Movement
 maxSpeed = 2;
 currentSpeed = maxSpeed;
-enemyGravity = 1;
+enemyGravity = 9;
 acceleration = 0.3;
 enemyFriction = 0.9;
 

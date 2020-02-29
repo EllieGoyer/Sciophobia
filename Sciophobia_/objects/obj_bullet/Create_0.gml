@@ -1,8 +1,8 @@
 //in create
 
-speed = 5;
+speed = 20;
 
-t = 2*room_speed; //time from creation to deletion in seconds
+t = 4 * room_speed; //time from creation to deletion in seconds
 
 
 //direction to go in

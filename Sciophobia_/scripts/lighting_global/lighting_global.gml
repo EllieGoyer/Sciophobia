@@ -21,7 +21,7 @@ if(__LIGHTING_ERROR_CHECKS) {
 //	#####################################
 
 // Ambient shadow level
-global.ambientShadowIntensity = 0.85;
+global.ambientShadowIntensity = 1; //0.85;
 
 // Whether the shadow caster's collision mask is used to cull it against lights (true) or not (false)
 // A polygon must be assigned to the shadow caster regardless, this is only for efficient culling
