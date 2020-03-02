@@ -19,5 +19,11 @@ if (is_active == share_active)
 	//if switch is off, but we've warmed up, use the cooldown timer
 	light[| eLight.Intensity] = 1.75;
 	cool--;
-	if(cool <= 0) {warm = 0;}	//once we're off, reset warm to 0
-}else{ light[| eLight.Intensity] = 0; }
+}
+else
+{ 
+	light[| eLight.Intensity] = 0; 
+	//once we're off, reset warm to 0
+	warm = 0;
+	cool = 0;
+}

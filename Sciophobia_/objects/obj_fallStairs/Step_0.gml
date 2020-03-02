@@ -2,7 +2,7 @@
 // You can write your code in this editor
 /// @description Insert description here
 // You can write your code in this editor
-if(distance_to_object(obj_pl1) < 1000) 
+if(distance_to_object(obj_pl1) < 100) 
 { 
 	if(obj_pl1.key_down && collisionReturnTimer == 0)
 	{
