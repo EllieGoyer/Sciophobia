@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "0eb9c688-fdf5-4303-8c63-79477f9e2075",
+            "Value": {
+                "id": "a8bf75ef-85a3-4078-b48b-19ab8be4baa3",
+                "resourcePath": "sprites\\spr_headTrap_head_hitbox\\spr_headTrap_head_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f406931-6a14-461d-8a0f-9ac88c55ff21",
             "Value": {
                 "id": "83822428-33a8-49a4-ab1d-460086020ed7",
@@ -2591,6 +2599,14 @@
             }
         },
         {
+            "Key": "8c355c47-437e-498d-9167-45cd4568e5ab",
+            "Value": {
+                "id": "374cd514-91c9-4a56-9d41-45723a7d6596",
+                "resourcePath": "scripts\\scr_animation_end\\scr_animation_end.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8e876879-2fbc-43b1-bcb5-b9d9466e469c",
             "Value": {
                 "id": "8662c1f7-afe3-484e-b9b5-7cc30902ec58",
@@ -4361,6 +4377,7 @@
         "feab10de-9c9b-4239-8f95-77aff48185bd",
         "aa7da453-5155-4fac-a6c6-536d8b696ac3",
         "331b53fe-9bde-4a51-80a6-74e861c0c262",
+        "8c355c47-437e-498d-9167-45cd4568e5ab",
         "441040b6-060b-4f47-a9a9-d8eb142eb468",
         "7da808ee-e11b-47dc-acb7-8c9b2bf987e8",
         "2d8d3f9b-e249-4e99-b2da-844aa841bc3b",

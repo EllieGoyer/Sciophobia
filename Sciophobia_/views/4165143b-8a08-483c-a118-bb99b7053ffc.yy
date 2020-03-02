@@ -8,7 +8,8 @@
         "2c619abe-1bc7-4952-acc2-152943315c7b",
         "e9e6feba-dd60-4ddd-89af-9abc627cdcaf",
         "cbc673f0-f61a-4bf0-a41d-41205b7e2d1a",
-        "a54d4315-fe07-426e-ab64-4f2305673832"
+        "a54d4315-fe07-426e-ab64-4f2305673832",
+        "0eb9c688-fdf5-4303-8c63-79477f9e2075"
     ],
     "filterType": "GMSprite",
     "folderName": "Head Trap",

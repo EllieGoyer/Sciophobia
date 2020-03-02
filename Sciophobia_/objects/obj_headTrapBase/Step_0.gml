@@ -14,7 +14,7 @@ switch (currentState)
 		break;
 		
 	case states.attack:
-		//scr_enemy_head_trap_attack(); 
+		scr_enemy_head_trap_attack(); 
 		break;
 		
 	case states.death:
@@ -28,12 +28,36 @@ switch (currentState)
 
 #endregion --------------------------------
 
-//Follow Path if one exists
-if (path_exists(pathBuilding)) { scr_follow_path(pathBuilding); }
-
 scr_enemy_collision();
 
-scr_check_HP();
-
 //Make light pause it
-if (isInLight) { moveTimer = 80; }
+//if (isInLight) { moveTimer = 80; }
+
+#region HP sync
+
+if (instance_exists(spinePiece_1))
+{
+if (spinePiece_1.currentHP < currentHP) { currentHP = spinePiece_1.currentHP; }
+else { spinePiece_1.currentHP = currentHP; }
+}
+
+if (instance_exists(spinePiece_2))
+{
+	if (spinePiece_2.currentHP < currentHP) { currentHP = spinePiece_2.currentHP; }
+	else { spinePiece_2.currentHP = currentHP; }
+}
+if (instance_exists(spinePiece_3))
+{
+if (spinePiece_3.currentHP < currentHP) { currentHP = spinePiece_3.currentHP; }
+else { spinePiece_3.currentHP = currentHP; }
+}
+
+if (instance_exists(headPiece))
+{
+	if (headPiece.currentHP < currentHP) { currentHP = headPiece.currentHP; }
+	else { headPiece.currentHP = currentHP; }
+}
+
+#endregion
+
+scr_check_HP();

@@ -52,6 +52,9 @@ attackDamage = 3;
 attackSpeed = 70;				//in frames or anim speed
 attackCooldown = attackSpeed;	//time until enemy can attack again
 
+hitByAttack = ds_list_create(); //List for hitbox implementation
+hitboxMask = noone;				//Collision Mask (sprite) for attacks
+
 #endregion
 #region Crowd Control and Feedback
 
@@ -59,22 +62,13 @@ knockbackMax = 5; //change per bullet?
 knockbackSpeed = knockbackMax; 
 
 #endregion
-#region Sounds
-/*
-sound_Death 
-sound_Idle
-sound_Attack
-sound_Chase
-*/
-             
+#region Animations
+
 anim_Death = spr_tempGeneralDeath;
+anim_Idle = noone;
+anim_Attack = noone;
+anim_Chase = noone;
 
-
-/*
-anim_Idle
-anim_Attack
-anim_Chase
-*/
 
 #endregion
 

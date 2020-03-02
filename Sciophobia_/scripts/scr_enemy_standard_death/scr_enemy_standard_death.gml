@@ -18,8 +18,4 @@ image_speed = 0.4;
 sprite_index = anim_Death;
 
 //Destroy when animation is over
-if (image_index > image_number - 1) 
-{
-    instance_destroy();
-
-}
+if (scr_animation_end())  { instance_destroy(); }
