@@ -1,5 +1,8 @@
 /// @description Insert description here
-tempIndex = 0;
+// You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
 
 if(obj_pl1.flashbangs > 0)
 {
@@ -7,7 +10,5 @@ if(obj_pl1.flashbangs > 0)
 }
 else
 {
-	tempIndex = 2;
+	image_alpha = 0;
 }
-
-image_index = tempIndex;

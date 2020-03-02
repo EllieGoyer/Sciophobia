@@ -47,7 +47,14 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 		if(key_shoot)
 		{
 			//stab animation
-			//hit in front
+			if(curDir == 1)
+			{
+				sprite_index = spr_slash_right;
+			}
+			else
+			{
+				sprite_index = spr_slash_left;
+			}
 			
 			//audio
 			audio_play_sound(knife_swing_01, 1, false);

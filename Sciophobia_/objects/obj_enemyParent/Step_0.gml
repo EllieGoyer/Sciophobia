@@ -1,4 +1,6 @@
  /// @description Main Functiomality
+if(!obj_gui.pauseMenu)
+{
 
 #region -----Main Finite State Machine-----
 
@@ -54,3 +56,4 @@ scr_check_HP();
 //Lighting Update
 //polygon = polygon_from_instance(id);
 
+}

@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "1fda32f9-8729-4bdd-8ec0-e1529ced0e4f",
+            "Value": {
+                "id": "1341fa4b-405f-4da3-a5b5-af9c301d4840",
+                "resourcePath": "sprites\\spr_slash_left\\spr_slash_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2042b537-7b59-4be8-b6dc-738e4bdd0fdd",
             "Value": {
                 "id": "7d246581-49d9-4202-a3b2-ee08d3b60d27",
@@ -2207,6 +2215,14 @@
             }
         },
         {
+            "Key": "7364865e-5365-4e0d-b08b-1a2238df29bb",
+            "Value": {
+                "id": "7d6c80d8-dd79-4cc4-a91a-dd6561c19166",
+                "resourcePath": "sprites\\spr_slash_right\\spr_slash_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "73d6fa87-dd89-4861-a494-597cbe369d99",
             "Value": {
                 "id": "bb53e560-3b7c-455c-9b17-263df642acfe",
@@ -2727,6 +2743,14 @@
             }
         },
         {
+            "Key": "90b88522-2c88-4773-9e61-f03b65fa264f",
+            "Value": {
+                "id": "fb68f0fa-7ba7-4916-97e9-6ebdc274d815",
+                "resourcePath": "objects\\obj_wheelItemParent\\obj_wheelItemParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "90bc215c-d445-496b-a636-82889731c082",
             "Value": {
                 "id": "bc2adf30-15ed-4b5e-95f8-cf88bbf7a3c4",
@@ -2756,6 +2780,14 @@
                 "id": "d77ebac1-b15d-41fa-969e-f6140b43962a",
                 "resourcePath": "views\\91da4247-84fa-4876-9f76-384ee9a457bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "92223ce1-0d24-42c4-868b-86964f103b06",
+            "Value": {
+                "id": "b62be537-a197-47da-82f8-c4d97504863c",
+                "resourcePath": "sprites\\spr_pistolArms_left\\spr_pistolArms_left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3956,6 +3988,14 @@
                 "id": "71684482-018a-474e-ab30-9887e70825c2",
                 "resourcePath": "datafiles_yy\\spr_w9_flashbang\\layers\\c961fcd5-15d7-4abe-9376-4f2132da3c3b\\1a9be95a-11e4-4c61-a5c1-27afe9d13a12.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "e67f78c7-0676-4e0e-8c30-59bb8baa94aa",
+            "Value": {
+                "id": "34f109c0-f00c-43ad-ba6d-ff57d8928247",
+                "resourcePath": "sprites\\spr_pistolArms_right\\spr_pistolArms_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

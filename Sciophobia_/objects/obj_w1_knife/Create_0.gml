@@ -1,6 +1,7 @@
 /// @description Insert description here
 
 tempIndex = 0;
+selected = false;
 
 if(obj_pl1.knife != -1)
 {
@@ -8,7 +9,7 @@ if(obj_pl1.knife != -1)
 }
 else
 {
-	tempIndex = 2;
+	image_alpha = 0;
 }
 
 image_index = tempIndex;

@@ -1,5 +1,8 @@
 /// @description Insert description here
-tempIndex = 0;
+
+event_inherited();
+
+
 
 if(obj_pl1.hunting_rifle != -1)
 {
@@ -7,7 +10,6 @@ if(obj_pl1.hunting_rifle != -1)
 }
 else
 {
-	tempIndex = 2;
+	image_alpha = 0;
 }
 
-image_index = tempIndex;

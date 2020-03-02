@@ -1,3 +1,6 @@
+if(!obj_gui.pauseMenu)
+{
+
 //in step
 //trap bool checks
 if(trapped)
@@ -33,6 +36,7 @@ if(gamepad_is_connected(padid)) //gamepad
 	key_dash = gamepad_button_check_pressed(padid, gp_face2);
 	key_interact = gamepad_button_check_pressed(padid, gp_face1);
 	key_show_inventory = gamepad_button_check(padid, gp_shoulderlb);
+	key_pause = gamepad_button_check(padid, gp_start);
 	var haxis = gamepad_axis_value(padid, gp_axislh);
 	var vaxis = gamepad_axis_value(padid, gp_axislv);
 	aim_angle = point_direction(0, 0, haxis, vaxis);
@@ -49,8 +53,15 @@ else //keyboard and mouse
 	key_dash = keyboard_check_pressed(vk_space);
 	key_interact = keyboard_check(ord("F"));
 	key_show_inventory = keyboard_check(ord("Q"));
+	key_pause = keyboard_check(vk_enter);
 	aim_angle = point_direction(x, y, mouse_x, mouse_y);
 	
+}
+
+//pause
+if(key_pause)
+{
+	obj_gui.pauseMenu = true;
 }
 
 //calculate movement
@@ -160,7 +171,8 @@ if(sound_timer <= 0)
 {
 	can_play_sound = true;
 }
+*/
 
 
 
-
+}

@@ -1,7 +1,7 @@
 basespeed = 3;
 speedmod = 6;
 fastspeed = basespeed * speedmod;
-slowspeed = 1.5;
+slowspeed = 2;
 cooldownspeed = 2.5;
 basegrv = .2;
 
@@ -20,6 +20,7 @@ key_aim = 0;
 key_dash = 0;
 key_interact = 0;
 key_show_inventory = 0;
+key_pause = 0;
 
 //dash_time is inverse to fastspeed, covers a roughly similar distance no matter the speedmod
 distance_dash = 4;

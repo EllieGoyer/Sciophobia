@@ -5,7 +5,7 @@
     "name": "obj_w6_assultRifle",
     "eventList": [
         {
-            "id": "47e16112-7a82-4aed-9539-2d638dc6c18c",
+            "id": "85a290b6-b182-4828-b747-b57f24877231",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,19 +15,19 @@
             "m_owner": "d54157b0-0697-42e7-ad66-a670ce177b15"
         },
         {
-            "id": "48d93b22-56d2-40d5-ae7a-6d2a931d4110",
+            "id": "359d0a58-88fc-4448-abf4-d1d175281d60",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 1,
             "m_owner": "d54157b0-0697-42e7-ad66-a670ce177b15"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "90b88522-2c88-4773-9e61-f03b65fa264f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

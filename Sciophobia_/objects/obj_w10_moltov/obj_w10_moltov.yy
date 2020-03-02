@@ -5,7 +5,7 @@
     "name": "obj_w10_moltov",
     "eventList": [
         {
-            "id": "68c90bbd-0fa9-43c9-91b8-7d2c61f049d4",
+            "id": "4263f4f4-1142-479d-ba71-5ca53a23b51b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,19 +15,19 @@
             "m_owner": "13168c8d-7a01-4afe-9cfb-46a2410dc17f"
         },
         {
-            "id": "b6f48b64-0317-4667-93ed-708173d92e86",
+            "id": "b680524a-c80f-4f89-955c-cc83bd2b4d38",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 1,
             "m_owner": "13168c8d-7a01-4afe-9cfb-46a2410dc17f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "90b88522-2c88-4773-9e61-f03b65fa264f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

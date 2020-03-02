@@ -5,7 +5,7 @@
     "name": "obj_w5_grenadeLauncher",
     "eventList": [
         {
-            "id": "b271e12f-4350-412b-adac-ef4ec05a221b",
+            "id": "06c94b25-5f34-41a4-ad28-d9257d899c58",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,19 +15,19 @@
             "m_owner": "c7e0b39d-125c-40bf-8bc6-055b3fdccff5"
         },
         {
-            "id": "3bd535d8-d69f-4ba4-b5e3-a440f829a21a",
+            "id": "be8ae6ad-bdec-4e30-bf25-9d865617dd99",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 1,
             "m_owner": "c7e0b39d-125c-40bf-8bc6-055b3fdccff5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "90b88522-2c88-4773-9e61-f03b65fa264f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

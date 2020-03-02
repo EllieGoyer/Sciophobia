@@ -8,6 +8,7 @@ if(gamepad_is_connected(1))
 	draw_text(200, 160, "Aim: Left Trigger");
 	draw_text(200, 180, "Shoot: Right Trigger");
 	draw_text(200, 200, "Dash: B");
+	draw_text(200, 220, "Pause: Start");
 	
 	draw_text(200, 400, "Press Left Trigger to go back");
 }
@@ -20,6 +21,7 @@ else
 	draw_text(200, 160, "Aim: Right Mouse");
 	draw_text(200, 180, "Shoot: Left Mouse");
 	draw_text(200, 100, "Dash: Space");
+	draw_text(200, 220, "Pause: Enter");
 	
 	draw_text(200, 400, "Press Right Mouse to go back");
 }

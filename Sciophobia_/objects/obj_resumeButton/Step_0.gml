@@ -6,7 +6,6 @@ if(place_meeting(x, y, obj_cursor))
 	image_index = 1;
 	if(obj_cursor.select_key)
 	{
-		obj_gui.pauseMenu = false;
 		if(instance_exists(obj_controlsbutton))
 		{
 			instance_destroy(obj_controlsbutton);
@@ -19,6 +18,8 @@ if(place_meeting(x, y, obj_cursor))
 		{
 			instance_destroy(obj_cursor);
 		}
+		obj_gui.pauseMenu = false;
+		
 		instance_destroy();
 	}
 }
