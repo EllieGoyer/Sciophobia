@@ -1,23 +1,33 @@
 {
-    "id": "b683882d-9d65-4629-870b-acbab883fdab",
+    "id": "905803f1-91e9-4663-9583-ac75a2232c96",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_HazardParent",
+    "name": "obj_timerParent",
     "eventList": [
         {
-            "id": "bec7e35f-d70f-4d3b-b3b0-ac1db25dd65a",
+            "id": "16fbcafd-f4df-4b87-ad2d-09caa7156e08",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "97b90403-bcee-441b-a160-a828b311fae5",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "b683882d-9d65-4629-870b-acbab883fdab"
+            "eventtype": 3,
+            "m_owner": "905803f1-91e9-4663-9583-ac75a2232c96"
+        },
+        {
+            "id": "f8c28075-7a67-4ed8-9fa2-aa17de9d236a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "905803f1-91e9-4663-9583-ac75a2232c96"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "905803f1-91e9-4663-9583-ac75a2232c96",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,21 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "240fb241-0594-4051-9629-56f8f421898f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "damageValue",
-            "varType": 1
-        },
-        {
-            "id": "2acc6087-0098-4056-aacc-e2bb643072aa",
+            "id": "9b34a79f-cc9c-42f4-bd0a-5a35343513f3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -57,7 +53,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "5.0",
-            "varName": "damageDelay",
+            "varName": "timerMax",
             "varType": 0
         }
     ],

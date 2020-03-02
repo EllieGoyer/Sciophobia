@@ -2223,6 +2223,14 @@
             }
         },
         {
+            "Key": "77b8db4a-d462-4720-ba47-b353e1a5e8e5",
+            "Value": {
+                "id": "c08fa543-d5f9-4273-9153-c3b26c9113ce",
+                "resourcePath": "views\\77b8db4a-d462-4720-ba47-b353e1a5e8e5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "786f36ad-4373-402e-98e1-7bc7a7019060",
             "Value": {
                 "id": "b6bf9587-2a1a-45ff-a7fd-ec029d276bf5",
@@ -2658,7 +2666,7 @@
             "Key": "905803f1-91e9-4663-9583-ac75a2232c96",
             "Value": {
                 "id": "41900c46-2e78-4112-9c48-93230d1ea094",
-                "resourcePath": "objects\\obj_HazardParent\\obj_HazardParent.yy",
+                "resourcePath": "objects\\obj_timerParent\\obj_timerParent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3311,6 +3319,14 @@
             }
         },
         {
+            "Key": "b683882d-9d65-4629-870b-acbab883fdab",
+            "Value": {
+                "id": "bb8702ed-35f4-4693-bb51-e86c69476abf",
+                "resourcePath": "objects\\obj_HazardParent\\obj_HazardParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b6bbc8a1-f615-46f4-a44e-6400831dfe64",
             "Value": {
                 "id": "202455b8-c0d4-4202-9c8f-4aa59fce39d8",
@@ -3460,6 +3476,14 @@
                 "id": "e986ab3d-e48a-466e-9c38-892c9f30ccb7",
                 "resourcePath": "scripts\\scr_approach\\scr_approach.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c30b676c-c3b7-4e73-8c5f-a658d92b10e7",
+            "Value": {
+                "id": "d534974f-4a87-4d84-a021-7b573462dd32",
+                "resourcePath": "objects\\obj_FallRock\\obj_FallRock.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3707,6 +3731,14 @@
             "Value": {
                 "id": "4638367c-f684-4335-9f17-a7d9e7b1ead4",
                 "resourcePath": "objects\\obj_w6_assultRifle\\obj_w6_assultRifle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d64fb8a6-0a31-451f-98b2-cb38f2706e3c",
+            "Value": {
+                "id": "a14eff57-c411-48a6-ab1b-ae750057ff10",
+                "resourcePath": "objects\\obj_FireHazard\\obj_FireHazard.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3959,6 +3991,14 @@
             }
         },
         {
+            "Key": "eac039f2-9894-4f8c-9e25-afa1eaf84f97",
+            "Value": {
+                "id": "00730363-c697-450d-a436-8bc6f6c65ed7",
+                "resourcePath": "objects\\obj_FallHazard\\obj_FallHazard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ebec3e83-87e7-40eb-a0d6-f1b61fb232e5",
             "Value": {
                 "id": "1e8eae28-7137-4418-ac6e-848b3bcf9ece",
@@ -4172,6 +4212,14 @@
                 "id": "c3dc0ed4-49fa-4025-a9ea-5cb8b254729f",
                 "resourcePath": "views\\f7482340-13bc-4a05-81a4-9b2417747a68.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f7954507-4719-423d-9bcb-c31bacf07fe0",
+            "Value": {
+                "id": "5cd16834-76d7-43cb-b5fa-51fe2a66e775",
+                "resourcePath": "objects\\obj_GrappleHazard\\obj_GrappleHazard.yy",
+                "resourceType": "GMObject"
             }
         },
         {

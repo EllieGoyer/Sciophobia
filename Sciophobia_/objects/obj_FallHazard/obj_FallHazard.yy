@@ -1,23 +1,33 @@
 {
-    "id": "b683882d-9d65-4629-870b-acbab883fdab",
+    "id": "eac039f2-9894-4f8c-9e25-afa1eaf84f97",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_HazardParent",
+    "name": "obj_FallHazard",
     "eventList": [
         {
-            "id": "bec7e35f-d70f-4d3b-b3b0-ac1db25dd65a",
+            "id": "9f89a774-e0d9-4529-84c0-1943861b491b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "97b90403-bcee-441b-a160-a828b311fae5",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "b683882d-9d65-4629-870b-acbab883fdab"
+            "eventtype": 3,
+            "m_owner": "eac039f2-9894-4f8c-9e25-afa1eaf84f97"
+        },
+        {
+            "id": "d0686c67-696c-46c7-a501-cd236c389b2c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "eac039f2-9894-4f8c-9e25-afa1eaf84f97"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "905803f1-91e9-4663-9583-ac75a2232c96",
+    "parentObjectId": "b683882d-9d65-4629-870b-acbab883fdab",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,7 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "240fb241-0594-4051-9629-56f8f421898f",
+            "id": "7e9123c4-6cb4-462c-8243-25711f5a14e3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -43,25 +53,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "damageValue",
-            "varType": 1
-        },
-        {
-            "id": "2acc6087-0098-4056-aacc-e2bb643072aa",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "5.0",
-            "varName": "damageDelay",
+            "varName": "initialOffset",
             "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "492ffc08-c7bf-4a8e-9796-6f3d743a8fc6",
+    "visible": false
 }

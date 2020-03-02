@@ -67,7 +67,7 @@ dissolver_grenadeE = 0;
 //different weapon stats
 reload_sp = 1;
 shoot_sp = 1;
-dmg = 1;
+dmg = 3;
 bullet_capacity = 1;
 weapon_weight = 0;
 
@@ -87,3 +87,6 @@ tempDirection = 1;
 //audio timer
 can_play_sound = true;
 sound_timer = 0;
+
+//trap bools
+trapped = false;

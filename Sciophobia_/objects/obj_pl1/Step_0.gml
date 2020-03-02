@@ -1,4 +1,13 @@
 //in step
+//trap bool checks
+if(trapped)
+{
+	basespeed = 0;
+}
+else
+{
+	basespeed = 3;
+}
 
 //look for gamepad
 var maxpads = gamepad_get_device_count();
