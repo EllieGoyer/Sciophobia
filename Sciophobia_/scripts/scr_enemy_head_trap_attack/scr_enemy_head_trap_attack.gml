@@ -39,7 +39,7 @@ if (!hasAttacked && !isAttacking)
 	isAttacking = true; 
 }
 
-var o = obj_headTrapBase;
+var o = id;
 
 //Move Parts to goal Coordinates and attack at location
 if (isAttacking)
