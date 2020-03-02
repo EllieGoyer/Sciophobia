@@ -30,8 +30,34 @@ switch (currentState)
 
 scr_enemy_collision();
 
-//Make light pause it
-//if (isInLight) { moveTimer = 80; }
+#region isInLight sync
+/*
+//If one is in light, all are
+if (isInLight || headPiece.isInLight || spinePiece_1.isInLight 
+	|| spinePiece_2.isInLight || spinePiece_3.isInLight)
+{
+	isInLight = true;
+	spinePiece_1.isInLight = true;
+	spinePiece_2.isInLight = true;
+	spinePiece_3.isInLight = true;
+	headPiece.isInLight = true;
+}
+*/
+#endregion
+
+#region Response to Light
+/*
+//Keep the enemy in alart state but not attack
+if (currentState != states.death)
+{
+	if (isInLight) 
+	{ 
+		//hasAttacked = true;
+		currentState = states.alert; 
+	}
+}
+*/
+#endregion
 
 #region HP sync
 

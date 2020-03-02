@@ -1,10 +1,5 @@
-/// @description scr_enemy_standard_idle()
-//What the enemy does when a player is not detected. Update later
-
-//Patrol Path
-//Sound
-//Animation
-//Any extra effects
+/// @description scr_enemy_headTrap_idle()
+//What the enemy does when a player is not detected.
 
 //Distance and Line of Sight check
 if ((point_distance(x, y, obj_pl1.x, obj_pl1.y) <= attackRadius)

@@ -1639,6 +1639,14 @@
             }
         },
         {
+            "Key": "4e2a42db-8e17-44b2-8b02-7b9d9588904b",
+            "Value": {
+                "id": "bc8ab2d8-c214-45be-b537-7c2d4a658b42",
+                "resourcePath": "sprites\\spr_shade_attack\\spr_shade_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4ebd2760-6df9-4593-b85e-fb945f30ff47",
             "Value": {
                 "id": "4b0a02d2-e512-41e6-86c3-e1dbc9462720",
@@ -1884,6 +1892,14 @@
                 "id": "ee65e32d-cf1e-48f0-99c2-07baa810c52f",
                 "resourcePath": "datafiles_yy\\spr_w7_pulseCannon\\97497648-55cc-4d45-8109-59aa55e732c9.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "621a8710-f5cd-45c0-815c-cff041f691bf",
+            "Value": {
+                "id": "6c550795-b641-4fda-a6ff-10b5d85dd39f",
+                "resourcePath": "sprites\\spr_tempShadeAttack\\spr_tempShadeAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2191,6 +2207,14 @@
             }
         },
         {
+            "Key": "73d6fa87-dd89-4861-a494-597cbe369d99",
+            "Value": {
+                "id": "bb53e560-3b7c-455c-9b17-263df642acfe",
+                "resourcePath": "sprites\\spr_tempCanineAttack_hitbox\\spr_tempCanineAttack_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7465281a-3fef-4f87-97fd-c7b76b749fd6",
             "Value": {
                 "id": "79d18fbf-fdab-433a-a490-e2188b9e6c79",
@@ -2263,6 +2287,14 @@
             }
         },
         {
+            "Key": "7b0fc781-e7b6-4494-8a74-b81014ba5ec6",
+            "Value": {
+                "id": "61c0697c-f7ac-4d0e-bd6f-821b0f7875e4",
+                "resourcePath": "views\\7b0fc781-e7b6-4494-8a74-b81014ba5ec6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7b513a35-30fc-430a-91de-f25d54186d46",
             "Value": {
                 "id": "7c7f5df0-a250-4580-a722-0e1cff52cd23",
@@ -2324,6 +2356,22 @@
                 "id": "1f3403b3-6995-442c-b869-28e9a0f4e807",
                 "resourcePath": "sounds\\hunting_rifle_01\\hunting_rifle_01.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "7e67ebb6-d8e4-4d71-a96f-2626cfa46dce",
+            "Value": {
+                "id": "9dfd2a5a-bcc9-4470-9632-5d14c4ed12ca",
+                "resourcePath": "sprites\\spr_tempShadeAttack_hitbox\\spr_tempShadeAttack_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7e9bcc9e-ec65-4997-8c73-6f5db32b2f6f",
+            "Value": {
+                "id": "4ad2dc88-621f-4a4f-9b70-c81fdb0f0bf1",
+                "resourcePath": "sprites\\spr_shade_attack_hitbox\\spr_shade_attack_hitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2548,6 +2596,14 @@
                 "id": "d203c5e2-a6c2-444f-b84c-0f93edc131ff",
                 "resourcePath": "datafiles_yy\\spr_w5_grenadeLauncher\\789dfef2-2407-4b6b-a0cb-2ff43946eda9.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "88c9c834-e3d0-4ac0-b596-83d8de9ab82c",
+            "Value": {
+                "id": "cd7a7431-980c-43e8-a1f2-a48a6e591f3f",
+                "resourcePath": "sprites\\spr_tempCanineAttack\\spr_tempCanineAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4079,6 +4135,14 @@
             }
         },
         {
+            "Key": "f0b8bcaf-b349-4903-b5ed-bcf11146f72a",
+            "Value": {
+                "id": "574b90bb-6f8c-4030-bfc9-a76740dcdc1c",
+                "resourcePath": "sprites\\spr_shade_idle\\spr_shade_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f12ee437-aafb-4eea-9344-48d0c3b21eb8",
             "Value": {
                 "id": "eeb80356-7cbc-4d61-a4df-6ff94a9c9771",
@@ -4426,6 +4490,7 @@
         "aa7da453-5155-4fac-a6c6-536d8b696ac3",
         "331b53fe-9bde-4a51-80a6-74e861c0c262",
         "8c355c47-437e-498d-9167-45cd4568e5ab",
+        "1546a086-6552-41c7-9424-712828fb1d4b",
         "441040b6-060b-4f47-a9a9-d8eb142eb468",
         "7da808ee-e11b-47dc-acb7-8c9b2bf987e8",
         "2d8d3f9b-e249-4e99-b2da-844aa841bc3b",
@@ -4442,7 +4507,6 @@
         "aff74437-ec30-4c0b-ac12-d88ea00c8a18",
         "1049ec58-e5ee-473d-8ad3-235598bd029d",
         "43e40d93-246c-4f1b-8d88-b712d04694f9",
-        "1546a086-6552-41c7-9424-712828fb1d4b",
         "7ec6e1a4-36c9-419e-87f2-6f5eda7e45d6",
         "44d7f04b-3b18-4620-b33c-6aa314e17d60",
         "6ee3e0fb-bcca-4948-a799-5edcb09383c4",

@@ -9,7 +9,7 @@ sightDetectRadius = 350;
 
 //Unique
 hasAttacked = false;
-attackRadius = 220;
+attackRadius = 500;
 attackSpeed = 100;				
 attackCooldown = attackSpeed;	
 isAttacking = false;			

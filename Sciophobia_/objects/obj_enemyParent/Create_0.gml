@@ -2,7 +2,7 @@
 
 #region Lighting
 
-lightCheckTimer = room_speed;
+lightCheckTimer = room_speed / 20;
 lightCheck = lightCheckTimer;
 isInLight = false; //Is the shadow caster's bounds within range of the light?
 
@@ -54,6 +54,8 @@ attackCooldown = attackSpeed;	//time until enemy can attack again
 
 hitByAttack = ds_list_create(); //List for hitbox implementation
 hitboxMask = noone;				//Collision Mask (sprite) for attacks
+
+attackRadius = 70;				//How close the player has to be for the enemy to attack
 
 #endregion
 #region Crowd Control and Feedback

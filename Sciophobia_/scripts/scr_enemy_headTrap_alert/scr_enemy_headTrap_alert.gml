@@ -3,6 +3,9 @@
 
 //Attack if close enough
 if (point_distance(x, y, obj_pl1.x, obj_pl1.y) <= attackRadius
+	&& collision_line(x, y, obj_pl1.x, obj_pl1.y, obj_terrainParent, 1, 0) == noone
+	&& point_direction(x, y, obj_pl1.x, obj_pl1.y) <= (270 + 45) 
+	&& point_direction(x, y, obj_pl1.x, obj_pl1.y) >= (270 - 45)
 	&& attackCooldown <= 0)
 {
 	currentState = states.attack;	

@@ -16,3 +16,7 @@ anim_Attack = spr_headTrap_head_attack;
 
 attackDamage = 2;
 hitboxMask = spr_headTrap_head_hitbox;	
+
+lightCheckTimer = room_speed / 20;
+lightCheck = lightCheckTimer;
+isInLight = false; 

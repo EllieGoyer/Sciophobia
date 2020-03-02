@@ -1,14 +1,19 @@
 /// @description Inherited
 event_inherited();
 
+//Stun when first exposed to Light
+/* if (!hasAggroed && isInLight) { hasAggroed = true; } */
 
-if (!hasAggroed && isInLight)
-{
-	hasAggroed = true;
-	maxSpeed += 1;
-	currentSpeed = maxSpeed;
+//Canine Effects in Light
+if (isInLight) 
+{ 
+	//Slowed in Light
+	currentSpeed = maxSpeed - canineLightSpeedHandicap; 
+	
+	//Gaining Potential Speed
+	if (maxSpeed <= canineUltraMaxSpeed) { maxSpeed += 0.005; }
 }
-
-//Slowed in Light
-if (isInLight) { currentSpeed = maxSpeed - 1; }
-else { currentSpeed = maxSpeed; }
+else 
+{ 
+	currentSpeed = maxSpeed; 
+}
