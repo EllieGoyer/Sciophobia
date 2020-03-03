@@ -17,3 +17,8 @@ if room = Level04
 {
 	audio_play_sound(level_music_04,100,true);
 }
+
+if room = Level05
+{
+	audio_play_sound(level_music_05,100,true);
+}

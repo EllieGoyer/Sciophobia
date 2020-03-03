@@ -120,6 +120,7 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 				instance_create_layer(x, y, "Instances", obj_bullet);
 				obj_pl1.normal_ammo--;
 				shoot_timer = obj_pl1.shoot_sp;
+				audio_play_sound(rifle_single_01, 1, false);
 			}
 		}
 	}

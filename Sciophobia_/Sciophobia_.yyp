@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "35361847-7aa7-49bf-a922-cbee2471e1d5",
+            "Value": {
+                "id": "29ed4042-f611-4e81-a1fd-abe42994b678",
+                "resourcePath": "sounds\\level_music_05\\level_music_05.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "35db5b05-1b62-4f15-bdaf-9352521a6fda",
             "Value": {
                 "id": "7e828fe6-fc72-4f59-ac8f-1b55601ca682",
