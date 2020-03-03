@@ -53,7 +53,7 @@ else //keyboard and mouse
 	key_dash = keyboard_check_pressed(vk_space);
 	key_interact = keyboard_check(ord("F"));
 	key_show_inventory = keyboard_check(ord("Q"));
-	key_pause = keyboard_check(vk_enter);
+	key_pause = keyboard_check(vk_escape);
 	aim_angle = point_direction(x, y, mouse_x, mouse_y);
 	
 }

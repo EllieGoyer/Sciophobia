@@ -9,8 +9,8 @@ if(obj_pl1.key_show_inventory)
 	if(!once)
 	{
 		instance_create_layer(x,y, "GUI", obj_w1_knife);
-		instance_create_layer(x,y, "GUI", obj_w2_huntingRifle);
-		instance_create_layer(x,y, "GUI", obj_w3_pistol);
+		instance_create_layer(x,y, "GUI", obj_w2_pistol);
+		instance_create_layer(x,y, "GUI", obj_w3_huntingRifle);
 		instance_create_layer(x,y, "GUI", obj_w4_shotgun);
 		instance_create_layer(x,y, "GUI", obj_w5_grenadeLauncher);
 		instance_create_layer(x,y, "GUI", obj_w6_assultRifle);

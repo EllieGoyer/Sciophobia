@@ -1274,7 +1274,7 @@
             "Key": "3d330e2d-0674-4944-b2b0-fbb60c664391",
             "Value": {
                 "id": "31379625-e968-4ee3-8a37-722b3710378c",
-                "resourcePath": "objects\\obj_w3_pistol\\obj_w3_pistol.yy",
+                "resourcePath": "objects\\obj_w2_pistol\\obj_w2_pistol.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1962,7 +1962,7 @@
             "Key": "64543d94-2b0f-4e18-8d73-3c844bff2a80",
             "Value": {
                 "id": "c59bb357-99f1-4c97-9e31-3b9c5207088d",
-                "resourcePath": "objects\\obj_w2_huntingRifle\\obj_w2_huntingRifle.yy",
+                "resourcePath": "objects\\obj_w3_huntingRifle\\obj_w3_huntingRifle.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3018,7 +3018,7 @@
             "Key": "9c8ea861-ee69-44b4-9b92-a98531c19a2e",
             "Value": {
                 "id": "7619e204-1326-4afe-8f47-58c890665bec",
-                "resourcePath": "sprites\\spr_w3_pistol\\spr_w3_pistol.yy",
+                "resourcePath": "sprites\\spr_w3_huntingRifle\\spr_w3_huntingRifle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3215,6 +3215,14 @@
             }
         },
         {
+            "Key": "a93dc0e1-3004-4cca-9a0a-adfac113bd62",
+            "Value": {
+                "id": "c943a5c0-c857-4bfd-880f-599d482b2f44",
+                "resourcePath": "sprites\\spr_rifleArms_left\\spr_rifleArms_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "aa1b1358-b5b4-4299-81ed-5323058fac89",
             "Value": {
                 "id": "b50bbd24-5de6-4b66-8cda-d33809925691",
@@ -3236,6 +3244,14 @@
                 "id": "03ad9f74-23c1-486c-b7aa-0a611075614f",
                 "resourcePath": "scripts\\scr_collision_line_x\\scr_collision_line_x.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aaa293b1-8982-494e-a583-137cdbecccd1",
+            "Value": {
+                "id": "7e542a2a-6ba8-4691-9f9d-99fae29787c5",
+                "resourcePath": "sprites\\spr_rifleArms_right\\spr_rifleArms_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3378,7 +3394,7 @@
             "Key": "b3aec804-8625-4100-b3a4-d86c87d33aae",
             "Value": {
                 "id": "6de4dff2-037c-4447-97ce-fe6074d579b1",
-                "resourcePath": "sprites\\spr_w2_huntingRifle\\spr_w2_huntingRifle.yy",
+                "resourcePath": "sprites\\spr_w2_pisol\\spr_w2_pisol.yy",
                 "resourceType": "GMSprite"
             }
         },
