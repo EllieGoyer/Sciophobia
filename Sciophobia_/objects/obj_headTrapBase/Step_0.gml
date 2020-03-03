@@ -1,6 +1,9 @@
 /// @description Override
 //No gravity
 
+if(!obj_gui.pauseMenu)
+{
+
 #region -----Main Finite State Machine-----
 
 switch (currentState)
@@ -87,3 +90,5 @@ if (instance_exists(headPiece))
 #endregion
 
 scr_check_HP();
+
+}

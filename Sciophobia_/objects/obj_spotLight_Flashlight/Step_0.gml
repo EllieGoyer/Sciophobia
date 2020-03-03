@@ -1,5 +1,17 @@
 /// @description 
 
+if(!obj_gui.pauseMenu)
+{
+	
+	if(!obj_pl1.flashlight)
+	{
+		lightIntensity = 0;
+	}
+	else
+	{
+		lightIntensity = 1;
+	}
+
 light[| eLight.Type] = eLightType.Spot;		
 
 //Set Origin to player
@@ -22,3 +34,5 @@ light[| eLight.Intensity] = lightIntensity;
 
 // Needed for Dynamic Parts
 light[| eLight.Flags] |= eLightFlags.Dirty; 
+
+}

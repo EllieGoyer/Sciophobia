@@ -270,7 +270,7 @@ else // idle
 			}
 		}
 	}
-	else if(!knife) //two handed
+	else if(!knife && !flashlight) //two handed
 	{
 		if(curDir == 1)
 		{

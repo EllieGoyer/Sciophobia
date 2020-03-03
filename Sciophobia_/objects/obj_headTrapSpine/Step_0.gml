@@ -1,5 +1,8 @@
 /// @description Override
 
+if(!obj_gui.pauseMenu)
+{
+	
 if (currentHP <= 0) 
 { 
 	//Set Death Anim/sprite 
@@ -9,3 +12,5 @@ if (currentHP <= 0)
 	//Destroy when animation is over
 	if (scr_animation_end()) { instance_destroy(); } 
 } 
+
+}

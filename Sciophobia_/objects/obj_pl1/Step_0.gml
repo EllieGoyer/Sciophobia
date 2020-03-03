@@ -93,6 +93,14 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 	{
 		//if we're colliding with stairs, try to go above the stairs
 		y -= 3;
+		if(key_left)
+		{
+			hsp = -1*movespeed;
+		}
+		else if(key_right)
+		{
+			hsp = 1*movespeed;
+		}
 		while(!place_meeting(x+sign(hsp),y,obj_stairs))
 		{
 			

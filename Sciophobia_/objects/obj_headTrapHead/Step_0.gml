@@ -1,4 +1,6 @@
 /// @description Override
+if(!obj_gui.pauseMenu)
+{
 
 if (currentHP <= 0) 
 { 
@@ -19,4 +21,6 @@ if (meleeAttacking)
 	{
 		meleeAttacking = false;
 	}
+}
+
 }

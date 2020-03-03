@@ -3,6 +3,8 @@ event_inherited();
 
 //Stun when first exposed to Light
 /* if (!hasAggroed && isInLight) { hasAggroed = true; } */
+if(!obj_gui.pauseMenu)
+{
 
 //Canine Effects in Light
 if (isInLight) 
@@ -16,4 +18,6 @@ if (isInLight)
 else 
 { 
 	currentSpeed = maxSpeed; 
+}
+
 }
