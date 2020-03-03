@@ -2,7 +2,7 @@
 draw_self();
 
 //arms
-if(key_aim || key_shoot || key_shoot_auto) //if aiming or shooting
+if((key_aim || key_shoot || key_shoot_auto) && !flashlight) //if aiming or shooting
 {
 	if(pistol) //one handed
 	{
