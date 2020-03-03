@@ -23,7 +23,7 @@ else if(obj_pl1.vsp > 2)
 	}
 }
 //crouch
-else if(obj_pl1.key_down && distance_to_object(obj_ladder) > 4)
+else if(obj_pl1.key_down && !place_meeting(x, y, obj_ladder))
 {
 	if(obj_pl1.curDir) //right
 	{
@@ -32,6 +32,18 @@ else if(obj_pl1.key_down && distance_to_object(obj_ladder) > 4)
 	else //left
 	{
 		sprite_index = spr_player_crouch_left;
+	}
+}
+//stabbing
+else if(obj_pl1.key_shoot && obj_pl1.knife)
+{
+	if(curDir == 1)
+	{
+			sprite_index = spr_slash_right;
+	}
+	else
+	{
+			sprite_index = spr_slash_left;
 	}
 }
 //standing

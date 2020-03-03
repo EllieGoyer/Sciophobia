@@ -53,7 +53,6 @@ armor = 0;
 
 //consumable
 normal_ammo = 20;
-special_ammo = 0;
 batteries = 0;
 glowsticks = 0;
 molotovs = 0;
@@ -91,3 +90,5 @@ sound_timer = 0;
 
 //trap bools
 trapped = false;
+
+shoot_timer = shoot_sp;

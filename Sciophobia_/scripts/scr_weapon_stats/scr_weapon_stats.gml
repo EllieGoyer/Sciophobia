@@ -1,5 +1,7 @@
 if(obj_pl1.knife)
 {
+	obj_pl1.reload_sp = 0;
+	obj_pl1.bullet_capacity = 0;
 	obj_pl1.dmg = 1;
 	obj_pl1.shoot_sp = 30;
 	obj_pl1.weapon_weight = 0;
@@ -31,6 +33,7 @@ else if(obj_pl1.shotgun)
 else if(obj_pl1.grenade_launcher)
 {
 	obj_pl1.reload_sp = 2.5*room_speed;
+	obj_pl1.shoot_sp = 1;
 	obj_pl1.dmg = 3;
 	obj_pl1.bullet_capacity = 1;
 	obj_pl1.weapon_weight = 1;

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0085133e-aeb4-4a97-9e6f-81bbdcec9f72",
+            "Value": {
+                "id": "04540767-c46c-4bd0-afeb-d78711baa12d",
+                "resourcePath": "objects\\obj_restartLevelButton\\obj_restartLevelButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "01b8958d-c344-41b8-9bcf-5df86962808c",
             "Value": {
                 "id": "efe8534c-1c88-4a0f-abb7-429e296bec50",
@@ -756,6 +764,14 @@
                 "id": "c7bd479e-c68e-4f0a-a125-ac377286d763",
                 "resourcePath": "datafiles_yy\\spr_w10_moltov\\layers\\76d4ab2a-a0f1-43f4-ac55-ca73ce4fe13d\\6cabae4b-0490-4f20-935a-9f944f1eeef5.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "24e3151c-e4ab-45f2-ac21-3dc092e14364",
+            "Value": {
+                "id": "9124795f-0fb4-47c9-8310-33687efaa10d",
+                "resourcePath": "objects\\obj_restartGameButton\\obj_restartGameButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2191,6 +2207,14 @@
             }
         },
         {
+            "Key": "726a42d0-1dc4-4fbb-94ce-61e0e0455bfa",
+            "Value": {
+                "id": "3fada2a3-9ff4-4d77-b8c5-038de193d882",
+                "resourcePath": "sprites\\spr_RestartLevelTitle\\spr_RestartLevelTitle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72cfd248-340b-455d-80c7-a0cf309d836c",
             "Value": {
                 "id": "949981af-8027-4e13-b4c2-716922107773",
@@ -3444,6 +3468,14 @@
                 "id": "e133993d-68fe-4c64-88a0-2bd1f34de3b3",
                 "resourcePath": "datafiles_yy\\spr_w11_glowstick\\b107b43d-5d89-4fc6-9caf-9f2f07111390.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "b897ab1c-f44b-48df-916e-e01a69298b15",
+            "Value": {
+                "id": "5349cd43-3009-4d03-b667-59fb2b48dc8e",
+                "resourcePath": "sprites\\spr_RestartGameTitle\\spr_RestartGameTitle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

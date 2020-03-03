@@ -1,13 +1,15 @@
 if(pauseMenu)
 {
 	//pause menu here
-	//draw_sprite_stretched(spr_black, 0, 0, 0, 720, 480);
-	draw_sprite(spr_Paused, 0, 250, 100);
-	instance_create_layer(obj_pl1.x, obj_pl1.y, "GUI", obj_resumeButton);
-	instance_create_layer(300, 200, "GUI", obj_controlsbutton);
-	instance_create_layer(300, 200, "GUI", obj_exitButton);
+	
+	draw_sprite(spr_Paused, 0, 300, 80);
+	
+	instance_create_layer(obj_pl1.x-50, obj_pl1.y+50, "GUI", obj_controlsbutton);
+	instance_create_layer(obj_pl1.x-50, obj_pl1.y-100, "GUI", obj_resumeButton);
+	instance_create_layer(obj_pl1.x-50, obj_pl1.y-50, "GUI", obj_restartLevelButton);
+	instance_create_layer(obj_pl1.x-50, obj_pl1.y, "GUI", obj_restartGameButton);
+	instance_create_layer(obj_pl1.x-50, obj_pl1.y+100, "GUI", obj_exitButton);
 	instance_create_layer(300, 200, "GUI", obj_cursor);
-
 }
 
 //during game play

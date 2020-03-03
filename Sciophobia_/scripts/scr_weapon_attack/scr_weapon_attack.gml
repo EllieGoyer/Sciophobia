@@ -49,11 +49,11 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 			//stab animation
 			if(curDir == 1)
 			{
-				sprite_index = spr_slash_right;
+					sprite_index = spr_slash_right;
 			}
 			else
 			{
-				sprite_index = spr_slash_left;
+					sprite_index = spr_slash_left;
 			}
 			
 			//audio
@@ -64,60 +64,85 @@ if((obj_pl1.hmove > 0 && mouse_x >= obj_pl1.x) || (obj_pl1.hmove < 0 && mouse_x 
 	{
 		if(key_shoot)
 		{
-			instance_create_layer(x, y, "Instances", obj_bullet);
-			obj_pl1.normal_ammo--;
-			audio_play_sound(hunting_rifle_01, 1, false);
+			if(shoot_timer < 1)
+			{
+				instance_create_layer(x, y, "Instances", obj_bullet);
+				obj_pl1.normal_ammo--;
+				audio_play_sound(hunting_rifle_01, 1, false);
+				shoot_timer = obj_pl1.shoot_sp;
+			}
 		}
 	}
 	else if(obj_pl1.pistol && obj_pl1.normal_ammo > 0)
 	{
 		if(key_shoot)
 		{
-			instance_create_layer(x, y, "Instances", obj_bullet);
-			obj_pl1.normal_ammo--;
-			//audio
-			audio_play_sound(pistol_fire_01, 1, false);
-				
+			if(shoot_timer < 1)
+			{
+				instance_create_layer(x, y, "Instances", obj_bullet);
+				obj_pl1.normal_ammo--;
+				//audio
+				audio_play_sound(pistol_fire_01, 1, false);
+				shoot_timer = obj_pl1.shoot_sp;
+			}
 		}
 	}
-	else if(obj_pl1.shotgun && obj_pl1.special_ammo > 0)
+	else if(obj_pl1.shotgun && obj_pl1.normal_ammo > 0)
 	{
 		if(key_shoot)
 		{
-			instance_create_layer(x, y, "Instances", obj_bullet);
-			obj_pl1.special_ammo--;
+			if(shoot_timer < 1)
+			{
+				instance_create_layer(x, y, "Instances", obj_bullet);
+				obj_pl1.normal_ammo--;
+				shoot_timer = obj_pl1.shoot_sp;
+			}
 		}
 	}
-	else if(obj_pl1.grenade_launcher && obj_pl1.special_ammo > 0)
+	else if(obj_pl1.grenade_launcher && obj_pl1.normal_ammo > 0)
 	{
 		if(key_shoot)
 		{
-			instance_create_layer(x, y, "Instances", obj_bullet);
-			obj_pl1.special_ammo--;
+			if(shoot_timer < 1)
+			{
+				instance_create_layer(x, y, "Instances", obj_bullet);
+				obj_pl1.normal_ammo--;
+				shoot_timer = obj_pl1.shoot_sp;
+			}
 		}	
 	}
 	else if(obj_pl1.assult_rifle && obj_pl1.normal_ammo > 0)
 	{
 		if(key_shoot_auto)
 		{
-			instance_create_layer(x, y, "Instances", obj_bullet);
-			obj_pl1.normal_ammo--;
+			if(shoot_timer < 1)
+			{
+				instance_create_layer(x, y, "Instances", obj_bullet);
+				obj_pl1.normal_ammo--;
+				shoot_timer = obj_pl1.shoot_sp;
+			}
 		}
 	}
-	else if(obj_pl1.pulse_cannon && obj_pl1.special_ammo > 0)
+	else if(obj_pl1.pulse_cannon && obj_pl1.normal_ammo > 0)
 	{
 		if(key_shoot_auto)
 		{
-			instance_create_layer(x, y, "Instances", obj_bullet);
-			obj_pl1.special_ammo--;
+			if(shoot_timer < 1)
+			{
+				instance_create_layer(x, y, "Instances", obj_bullet);
+				obj_pl1.normal_ammo--;
+				shoot_timer = obj_pl1.shoot_sp;
+			}
 		}	
 	}
-	else if(!audio_is_playing(no_ammo_01) && obj_pl1.normal_ammo < 1)
+	//out of ammo
+	if(!audio_is_playing(no_ammo_01) && obj_pl1.normal_ammo < 1)
 	{
-		if(key_shoot_auto)
+		if(key_shoot_auto || key_shoot && !knife)
 		{
-		audio_play_sound(no_ammo_01, 1, false);
+			audio_play_sound(no_ammo_01, 1, false);
 		}
-
 	}
 }
+
+shoot_timer--;

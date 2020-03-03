@@ -14,6 +14,14 @@ if(place_meeting(x, y, obj_cursor))
 		{
 			instance_destroy(obj_exitButton);
 		}
+		if(instance_exists(obj_restartLevelButton))
+		{
+			instance_destroy(obj_restartLevelButton);
+		}
+		if(instance_exists(obj_restartGameButton))
+		{
+			instance_destroy(obj_restartGameButton);
+		}
 		if(instance_exists(obj_cursor))
 		{
 			instance_destroy(obj_cursor);

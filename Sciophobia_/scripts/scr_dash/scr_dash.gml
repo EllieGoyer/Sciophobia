@@ -1,3 +1,5 @@
+instRight = instance_position(x+4, y-1, obj_pl1);
+instLeft = instance_position(x-4, y-1, obj_pl1);
 switch (dash_states)
 {
 	case dash_states.dashing:
@@ -6,6 +8,13 @@ switch (dash_states)
 		obj_pl1.tempDash--;
 		obj_pl1.tempCooldown = obj_pl1.dash_cooldown_time;
 		obj_pl1.grv = 0;
+		if(place_meeting(x, y, obj_stairs))
+		{
+			if(instRight == obj_stairs || instLeft == obj_stairs)
+			{
+				obj_pl1.y-=3;
+			}
+		}
 	break;
 	case dash_states.dash_cooldown:
 		obj_pl1.checkedDirection = false;

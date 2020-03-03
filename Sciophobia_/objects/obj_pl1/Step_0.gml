@@ -34,7 +34,7 @@ if(gamepad_is_connected(padid)) //gamepad
 	key_shoot_auto = gamepad_button_check(padid, gp_shoulderrb);
 	key_aim = gamepad_button_check(padid, gp_shoulderl);
 	key_dash = gamepad_button_check_pressed(padid, gp_face2);
-	key_interact = gamepad_button_check_pressed(padid, gp_face1);
+	key_interact = gamepad_button_check(padid, gp_face1);
 	key_show_inventory = gamepad_button_check(padid, gp_shoulderlb);
 	key_pause = gamepad_button_check(padid, gp_start);
 	var haxis = gamepad_axis_value(padid, gp_axislh);
@@ -72,7 +72,7 @@ if(dash_states != dash_states.dashing)
 hsp = hmove * movespeed;
 
 //ladder
-if(distance_to_object(obj_ladder) < 2)
+if(place_meeting(x, y, obj_ladder))
 {
 	vsp = key_up + key_down;
 	grv = 0;
@@ -92,7 +92,10 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 	if(place_meeting(x+hsp, y, obj_stairs))
 	{
 		//if we're colliding with stairs, try to go above the stairs
-		y -= 1;
+		if(key_right || key_left || dash_states == dash_states.dashing)
+		{
+			y -= 3;
+		}
 		while(!place_meeting(x+sign(hsp),y,obj_stairs))
 		{
 			
