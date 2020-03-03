@@ -26,7 +26,7 @@ if(place_meeting(x, y, obj_cursor))
 		{
 			instance_destroy(obj_cursor);
 		}
-		obj_gui.pauseMenu = false;
+		
 		
 		instance_destroy();
 	}

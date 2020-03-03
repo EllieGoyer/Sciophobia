@@ -18,4 +18,9 @@ if(!pauseMenu)
 	draw_text(10, 430, "HP: " + string(obj_pl1.currentHP) + "/" + string(obj_pl1.maxHP));
 	//add different ammo later
 	draw_text(10, 450, "Ammo: " + string(obj_pl1.normal_ammo));
+	
+	if(instance_exists(obj_resumeButton))
+	{
+		instance_destroy(obj_resumeButton);
+	}
 }

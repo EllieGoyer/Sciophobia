@@ -89,13 +89,10 @@ vsp += grv;
 //horizontal collision
 if(place_meeting(x+hsp, y, obj_terrainParent))
 {
-	if(place_meeting(x+hsp, y, obj_stairs))
+	if(place_meeting(x+hsp, y, obj_stairs) || place_meeting(x, y, obj_stairs) || place_meeting(x-hsp, y, obj_stairs) )
 	{
 		//if we're colliding with stairs, try to go above the stairs
-		if(key_right || key_left || dash_states == dash_states.dashing)
-		{
-			y -= 3;
-		}
+		y -= 3;
 		while(!place_meeting(x+sign(hsp),y,obj_stairs))
 		{
 			

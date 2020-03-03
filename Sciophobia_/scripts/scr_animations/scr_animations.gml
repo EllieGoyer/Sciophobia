@@ -47,7 +47,7 @@ else if(obj_pl1.key_shoot && obj_pl1.knife)
 	}
 }
 //standing
-else if(obj_pl1.hsp == 0 && obj_pl1.vsp == 0)
+else if(obj_pl1.hsp == 0 && obj_pl1.vsp == 0 || (!obj_pl1.key_left && !obj_pl1.key_right && !obj_pl1.key_down))
 {
 	if(obj_pl1.curDir) //right
 	{
