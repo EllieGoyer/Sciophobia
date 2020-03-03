@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "07e57cd5-1088-44ef-95fa-0c428b9bf6f1",
+            "Value": {
+                "id": "02be507f-ece2-4732-be2f-3bcf809b7401",
+                "resourcePath": "sprites\\spr_rock\\spr_rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0812ff5a-9f50-4db6-94aa-5f373083718b",
             "Value": {
                 "id": "96f0f0ff-093f-4636-adbd-ab22cc5d3d70",
@@ -1396,6 +1404,14 @@
                 "id": "d5b20083-b056-413c-a55c-7ef3078b3867",
                 "resourcePath": "sounds\\grenade_explode_01\\grenade_explode_01.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "42c2e955-0ff5-4b8b-9a8b-0b2a3ba4d76b",
+            "Value": {
+                "id": "6bf21bc4-b258-400e-b0ac-436af9577a30",
+                "resourcePath": "sprites\\spr_rockMixed\\spr_rockMixed.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2940,6 +2956,14 @@
                 "id": "c6365beb-1823-4140-8aec-4294a07165bd",
                 "resourcePath": "scripts\\light_create_area\\light_create_area.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "971875c8-92a2-4d5a-b0ca-bc3384750c49",
+            "Value": {
+                "id": "e8c56faf-91ae-40ab-9db3-9daca48c39e6",
+                "resourcePath": "sprites\\spr_bearTrap\\spr_bearTrap.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

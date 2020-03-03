@@ -4,15 +4,9 @@
 // Inherit the parent event
 if(selfTimer <= 0)
 {
-	active = true;
+	//create the litteral hazard
+	instance_create_layer(x,y,"Instances", obj_FallRock);
 	selfTimer = room_speed * timerMax;
 }
 
 selfTimer--;
-
-//instantiate a Drop/Fall Rock
-if(active)
-{
-	instance_create_layer(x,y,"Instances", obj_FallRock);
-	active = false;
-}

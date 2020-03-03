@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 //play destroy animation;
-other.currentHP -= damage;
+obj_pl1.currentHP -= damage;
 instance_destroy();

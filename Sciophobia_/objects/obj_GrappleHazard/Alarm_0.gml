@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Reset Trap
 // You can write your code in this editor
 
 //after trapping player and delaying,
