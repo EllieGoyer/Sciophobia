@@ -89,6 +89,36 @@ vsp += grv;
 //horizontal collision
 if(place_meeting(x+hsp, y, obj_terrainParent))
 {
+	//new ramp
+	
+	/*if(key_left && place_meeting(x-1, y, obj_stairs)) //left of stairs
+	{
+		y -= 5;
+		hsp = -1*movespeed;
+	}
+	else if(key_right && place_meeting(x+1, y, obj_stairs)) //right of stairs
+	{
+		y -= 5;
+		hsp = 1*movespeed;
+	}
+	else //normal movement
+	{
+		//terrainParent is all o_wall and o_door objects
+		while(!place_meeting(x+sign(hsp), y, obj_terrainParent))
+		{
+			//sign returns -1 or 1 (or 0) based on input
+			//moving pl1 1 pixel unit at a time until collision
+			x += sign(hsp);
+		
+			hsp -= sign(hsp);
+			if(abs(hsp) < 1){break;}
+		}
+		hsp = 0;
+	}*/
+	
+	
+	//original ramp
+	
 	if(place_meeting(x+hsp, y, obj_stairs) || place_meeting(x, y, obj_stairs) || place_meeting(x-hsp, y, obj_stairs) )
 	{
 		//if we're colliding with stairs, try to go above the stairs
@@ -112,17 +142,6 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 		}
 	}
 	
-	//terrainParent is all o_wall and o_door objects
-	while(!place_meeting(x+sign(hsp), y, obj_terrainParent))
-	{
-		//sign returns -1 or 1 (or 0) based on input
-		//moving pl1 1 pixel unit at a time until collision
-		x += sign(hsp);
-		
-		hsp -= sign(hsp);
-		if(abs(hsp) < 1){break;}
-	}
-	hsp = 0;
 }
 x += hsp;
 
