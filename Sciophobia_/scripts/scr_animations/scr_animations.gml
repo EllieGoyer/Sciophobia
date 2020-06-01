@@ -11,7 +11,7 @@ if(dash_states == dash_states.dashing)
 	}
 }
 //fall
-else if(obj_pl1.vsp > 2)
+else if(obj_pl1.vsp > 3)
 {
 	if(obj_pl1.curDir) //right
 	{

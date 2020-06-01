@@ -93,16 +93,16 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 	
 	/*if(key_left && place_meeting(x-1, y, obj_stairs)) //left of stairs
 	{
-		y -= 5;
+		y -= 2+movespeed;
 		hsp = -1*movespeed;
 	}
 	else if(key_right && place_meeting(x+1, y, obj_stairs)) //right of stairs
 	{
-		y -= 5;
+		y -= 2+movespeed;
 		hsp = 1*movespeed;
 	}
-	else //normal movement
-	{
+	//else //normal movement
+	//{
 		//terrainParent is all o_wall and o_door objects
 		while(!place_meeting(x+sign(hsp), y, obj_terrainParent))
 		{
@@ -114,7 +114,7 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 			if(abs(hsp) < 1){break;}
 		}
 		hsp = 0;
-	}*/
+	//}*/
 	
 	
 	//original ramp
@@ -122,7 +122,7 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 	if(place_meeting(x+hsp, y, obj_stairs) || place_meeting(x, y, obj_stairs) || place_meeting(x-hsp, y, obj_stairs) )
 	{
 		//if we're colliding with stairs, try to go above the stairs
-		y -= 3;
+		y -= 2+movespeed;
 		if(key_left)
 		{
 			hsp = -1*movespeed;
@@ -134,6 +134,47 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 		while(!place_meeting(x+sign(hsp),y,obj_stairs))
 		{
 			
+			x+=sign(hsp);
+			//itterate one at a time until hsp ~ 0
+			hsp -= sign(hsp); // -10 - (-1) or 10 - (1)
+			if(abs(hsp) < 1){break;}
+			//abs(hsp)<1 is better than hsp==0 because hsp can be a float.
+		}
+	}
+	
+	if(place_meeting(x+hsp, y, obj_stairs_right) || place_meeting(x, y, obj_stairs_right))
+	{
+		if(key_right) //going up the stairs
+		{
+			y -= 2+movespeed;
+			hsp = 1*movespeed;
+		}
+		else if(key_left) //going down the stairs
+		{
+			hsp = -1*movespeed;
+		}
+		while(!place_meeting(x+sign(hsp),y,obj_stairs_right))
+		{
+			x+=sign(hsp);
+			//itterate one at a time until hsp ~ 0
+			hsp -= sign(hsp); // -10 - (-1) or 10 - (1)
+			if(abs(hsp) < 1){break;}
+			//abs(hsp)<1 is better than hsp==0 because hsp can be a float.
+		}
+	}
+	if(place_meeting(x-hsp, y, obj_stairs_left) || place_meeting(x, y, obj_stairs_left))
+	{
+		if(key_left) //going up the stairs
+		{
+			y -= 2+movespeed;
+			hsp = -1*movespeed;
+		}
+		else if(key_right) //going down the stairs
+		{
+			hsp = 1*movespeed;
+		}
+		while(!place_meeting(x+sign(hsp),y,obj_stairs_left))
+		{
 			x+=sign(hsp);
 			//itterate one at a time until hsp ~ 0
 			hsp -= sign(hsp); // -10 - (-1) or 10 - (1)
