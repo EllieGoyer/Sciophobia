@@ -9,7 +9,7 @@ if(trapped)
 }
 else
 {
-	basespeed = 3;
+	basespeed = 4;
 }
 
 //look for gamepad
@@ -89,49 +89,21 @@ vsp += grv;
 //horizontal collision
 if(place_meeting(x+hsp, y, obj_terrainParent))
 {
-	//new ramp
-	
-	/*if(key_left && place_meeting(x-1, y, obj_stairs)) //left of stairs
-	{
-		y -= 2+movespeed;
-		hsp = -1*movespeed;
-	}
-	else if(key_right && place_meeting(x+1, y, obj_stairs)) //right of stairs
-	{
-		y -= 2+movespeed;
-		hsp = 1*movespeed;
-	}
-	//else //normal movement
-	//{
-		//terrainParent is all o_wall and o_door objects
-		while(!place_meeting(x+sign(hsp), y, obj_terrainParent))
-		{
-			//sign returns -1 or 1 (or 0) based on input
-			//moving pl1 1 pixel unit at a time until collision
-			x += sign(hsp);
-		
-			hsp -= sign(hsp);
-			if(abs(hsp) < 1){break;}
-		}
-		hsp = 0;
-	//}*/
-	
-	
-	//original ramp
-	
-	if(place_meeting(x+hsp, y, obj_stairs) || place_meeting(x, y, obj_stairs) || place_meeting(x-hsp, y, obj_stairs) )
+	#region stairs
+	#region stairright
+	if(place_meeting(x+hsp, y, obj_stairs_right) || place_meeting(x, y, obj_stairs_right) || place_meeting(x-hsp, y, obj_stairs_right) )
 	{
 		//if we're colliding with stairs, try to go above the stairs
-		y -= 2+movespeed;
+		y -= 2+(stairspeedmod*movespeed);
 		if(key_left)
 		{
-			hsp = -1*movespeed;
+			hsp = (-stairspeedmod)*movespeed;
 		}
 		else if(key_right)
 		{
-			hsp = 1*movespeed;
+			hsp = (stairspeedmod)*movespeed;
 		}
-		while(!place_meeting(x+sign(hsp),y,obj_stairs))
+		while(!place_meeting(x+sign(hsp),y,obj_stairs_right))
 		{
 			
 			x+=sign(hsp);
@@ -146,12 +118,12 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 	{
 		if(key_right) //going up the stairs
 		{
-			y -= 2+movespeed;
-			hsp = 1*movespeed;
+			y -= 2+(stairspeedmod*movespeed);
+			hsp = stairspeedmod*movespeed;
 		}
 		else if(key_left) //going down the stairs
 		{
-			hsp = -1*movespeed;
+			hsp = -stairspeedmod*movespeed;
 		}
 		while(!place_meeting(x+sign(hsp),y,obj_stairs_right))
 		{
@@ -162,16 +134,41 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 			//abs(hsp)<1 is better than hsp==0 because hsp can be a float.
 		}
 	}
-	if(place_meeting(x-hsp, y, obj_stairs_left) || place_meeting(x, y, obj_stairs_left))
+	#endregion
+	#region stairleft
+	if(place_meeting(x+hsp, y, obj_stairs_left) || place_meeting(x, y, obj_stairs_left) || place_meeting(x-hsp, y, obj_stairs_left) )
 	{
-		if(key_left) //going up the stairs
+		//if we're colliding with stairs, try to go above the stairs
+		y -= 2+(stairspeedmod*movespeed);
+		if(key_left)
 		{
-			y -= 2+movespeed;
-			hsp = -1*movespeed;
+			hsp = (-stairspeedmod)*movespeed;
 		}
-		else if(key_right) //going down the stairs
+		else if(key_right)
 		{
-			hsp = 1*movespeed;
+			hsp = (stairspeedmod)*movespeed;
+		}
+		while(!place_meeting(x+sign(hsp),y,obj_stairs_left))
+		{
+			
+			x+=sign(hsp);
+			//itterate one at a time until hsp ~ 0
+			hsp -= sign(hsp); // -10 - (-1) or 10 - (1)
+			if(abs(hsp) < 1){break;}
+			//abs(hsp)<1 is better than hsp==0 because hsp can be a float.
+		}
+	}
+	
+	if(place_meeting(x+hsp, y, obj_stairs_left) || place_meeting(x, y, obj_stairs_left))
+	{
+		if(key_right) //going down the stairs
+		{
+			hsp = stairspeedmod*movespeed;
+		}
+		else if(key_left) //going up the stairs
+		{
+			y -= 2+(stairspeedmod*movespeed);
+			hsp = -stairspeedmod*movespeed;
 		}
 		while(!place_meeting(x+sign(hsp),y,obj_stairs_left))
 		{
@@ -182,7 +179,18 @@ if(place_meeting(x+hsp, y, obj_terrainParent))
 			//abs(hsp)<1 is better than hsp==0 because hsp can be a float.
 		}
 	}
+	#endregion
+	#endregion
+	#region horizontalcollisions
 	
+	if(place_meeting(x+hsp,y,obj_terrainParent))
+	{
+		while(!place_meeting(x+sign(hsp),y,obj_terrainParent))
+		{x = x + sign(hsp);}
+		hsp=0;
+	}
+	
+	#endregion
 }
 x += hsp;
 

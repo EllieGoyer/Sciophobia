@@ -1,9 +1,10 @@
-basespeed = 3;
-speedmod = 6;
+basespeed = 4;
+speedmod = 3;
 fastspeed = basespeed * speedmod;
 slowspeed = 2;
 cooldownspeed = 2.5;
 basegrv = .2;
+stairspeedmod = 2/3
 
 hsp = 0; //horizontal speed
 vsp = 0; //vertical speed
